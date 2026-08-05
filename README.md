@@ -47,4 +47,4 @@ I file compilati saranno disponibili nella cartella `dist/`, pronti per il deplo
 
 ---
 
-*Progetto web realizzato a cura di Simana.*
+*created by [Dimana.DigitalCreations](https://www.instagram.com/dimana.digitalcreations/)*

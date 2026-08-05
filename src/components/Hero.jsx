@@ -100,7 +100,6 @@ export default function Hero() {
         ))}
       </div>
       <div className="container hero-content">
-        <div className="hero-kicker">Vendita · Assistenza · Assemblaggio</div>
         <h1>
           <span className="line">
             <span>Macchine che</span>

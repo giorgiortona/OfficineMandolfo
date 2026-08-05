@@ -134,7 +134,7 @@ export default function Footer() {
               Privacy & Cookie Policy
             </button>
             <span>·</span>
-            <span>sito realizzato a cura di "Simana"</span>
+            <span>created by <a href="https://www.instagram.com/dimana.digitalcreations/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>Dimana.DigitalCreations</a></span>
           </span>
         </div>
       </footer>
