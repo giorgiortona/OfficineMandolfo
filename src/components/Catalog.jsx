@@ -31,7 +31,7 @@ function Thumb({ item }) {
 export default function Catalog() {
   const root = useRef(null);
   const grid = useRef(null);
-  const [active, setActive] = useState("all");
+  const [active, setActive] = useState("motozappe");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const items = useMemo(() => {
@@ -69,8 +69,9 @@ export default function Catalog() {
           <SectionKicker>Catalogo</SectionKicker>
           <h2>Attrezzature per ogni lavoro</h2>
           <p>
-            {categories.reduce((n, c) => n + c.items.length, 0)} articoli in{" "}
-            {categories.length} categorie. I prezzi indicati sono già scontati
+            {items.length} articoli in{" "}
+            {active === "all" ? categories.length : 1}{" "}
+            {active === "all" ? "categorie" : "categoria"}. I prezzi indicati sono già scontati
             rispetto al listino; per il resto, chiedici un preventivo.
           </p>
         </div>

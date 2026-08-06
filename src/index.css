@@ -5,10 +5,10 @@
   --line: rgba(10, 60, 40, 0.12);
   --text: #13221a;
   --muted: #5c6b62;
-  --accent: #009b72; /* verde insegna */
-  --accent-dark: #007a59;
-  --accent-bright: #17c993; /* per i fondi scuri (hero, banda) */
-  --accent-soft: rgba(0, 155, 114, 0.1);
+  --accent: #5c3a21; /* marrone scuro */
+  --accent-dark: #422a18;
+  --accent-bright: #8f6140; /* per i fondi scuri (hero, banda) */
+  --accent-soft: rgba(92, 58, 33, 0.1);
   --radius: 14px;
   --shadow: 0 18px 45px rgba(14, 40, 28, 0.12);
   --font-display: "Archivo Black", "Archivo", sans-serif;
@@ -73,9 +73,38 @@ section {
   gap: 20px;
 }
 
-.pl-logo {
+.pl-stage {
+  position: relative;
   width: min(170px, 40vw);
-  color: var(--accent);
+  display: flex;
+}
+
+.pl-logo {
+  width: 100%;
+  color: #1ca50d; /* verde del logo originale */
+  /* fumo e terra escono dal viewBox */
+  overflow: visible;
+}
+
+/* la striscia di terreno sotto le ruote */
+.pl-ground {
+  position: absolute;
+  left: -85%;
+  right: -85%;
+  bottom: 5%;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(122, 96, 62, 0.45) 18%,
+    rgba(122, 96, 62, 0.45) 82%,
+    transparent
+  );
+}
+
+.tl-dirt {
+  fill: #8f7047;
 }
 
 .pl-word {
@@ -89,20 +118,18 @@ section {
 }
 
 .pl-officine {
-  color: var(--text);
+  color: #1ca50d;
   align-self: center;
 }
 
 .pl-panel {
-  background: var(--accent);
-  border-radius: 8px;
-  padding: 10px 20px;
+  background: transparent;
   display: flex;
   align-items: center;
 }
 
 .pl-mandolfo {
-  color: #fff;
+  color: #1ca50d;
 }
 
 .pl-sub {
@@ -117,7 +144,7 @@ section {
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
-  z-index: 50;
+  z-index: 150;
   color: #fff;
   transition: background 0.35s ease, box-shadow 0.35s ease, color 0.35s ease;
 }
@@ -141,24 +168,35 @@ section {
   align-items: center;
 }
 
+/* Sull'hero l'insegna sta in grande sopra la foto; quando la barra diventa
+   bianca allo scroll si stringe e perde l'ombra, fondendosi con la nav. */
 .logo-img {
-  height: 54px;
+  height: 80px;
   width: auto;
   background: #fff;
-  border-radius: 12px;
-  padding: 7px 14px;
+  border-radius: 14px;
+  padding: 9px 18px;
   object-fit: contain;
-  box-shadow: 0 4px 18px rgba(7, 20, 14, 0.18);
-  transition: box-shadow 0.35s ease;
+  box-shadow: 0 12px 34px rgba(7, 20, 14, 0.3);
+  transition: height 0.35s ease, padding 0.35s ease, border-radius 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .nav.scrolled .logo-img {
+  height: 52px;
+  padding: 6px 12px;
+  border-radius: 10px;
   box-shadow: none;
 }
 
 @media (max-width: 700px) {
   .logo-img {
+    height: 60px;
+    padding: 7px 13px;
+  }
+  .nav.scrolled .logo-img {
     height: 46px;
+    padding: 5px 10px;
   }
 }
 
@@ -184,19 +222,21 @@ section {
 }
 
 .nav-cta {
-  background: var(--accent);
-  color: #fff;
+  background: #f0f2f1;
+  color: var(--text);
   border: 0;
   padding: 10px 20px;
   border-radius: 99px;
   font-weight: 700;
   font-size: 0.85rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 155, 114, 0.4);
+  background: #5c3a21;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(92, 58, 33, 0.4);
 }
 
 @media (max-width: 860px) {
@@ -285,7 +325,7 @@ section {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--accent-bright);
+  color: #1ca50d; /* verde del logo */
 }
 
 .hero-sub {
@@ -315,13 +355,15 @@ section {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #fff;
+  background: #f0f2f1;
+  color: var(--text);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 155, 114, 0.45);
+  background: #5c3a21;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(92, 58, 33, 0.45);
 }
 
 .btn-ghost {
@@ -396,7 +438,7 @@ section {
   font-family: var(--font-display);
   text-transform: uppercase;
   font-size: 1.15rem;
-  color: rgba(19, 34, 26, 0.28);
+  color: #5c3a21; /* Marrone scuro */
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -459,7 +501,7 @@ section {
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 64px;
   align-items: center;
 }
@@ -468,20 +510,131 @@ section {
   position: relative;
 }
 
-.about-media .main-img {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+/* --- Galleria animata (mazzo di foto) --- */
+.about-gallery {
+  padding-top: 46px;
 }
 
-.about-media .poster {
+.ag-deck {
+  position: relative;
+  width: calc(100% - 60px);
+  aspect-ratio: 4 / 5;
+}
+
+.ag-card {
   position: absolute;
-  width: 34%;
-  right: -6%;
-  bottom: -12%;
-  border-radius: 10px;
+  inset: 0;
+  margin: 0;
+  border-radius: var(--radius);
   border: 5px solid #fff;
-  box-shadow: 0 20px 50px rgba(14, 40, 28, 0.25);
-  rotate: 3deg;
+  overflow: hidden;
+  background: var(--bg-2);
+  box-shadow: 0 20px 50px rgba(14, 40, 28, 0.22);
+  will-change: transform, opacity;
+}
+
+.ag-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.ag-next {
+  position: absolute;
+  z-index: 70;
+  right: -18px;
+  bottom: 22px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--accent);
+  font-size: 1.15rem;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.ag-next:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.ag-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-top: 26px;
+  min-height: 46px;
+}
+
+.ag-count {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.ag-count b {
+  color: var(--accent);
+}
+
+.ag-caption {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.ag-progress {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.ag-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.ag-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.ag-dots button {
+  width: 16px;
+  height: 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: var(--line);
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.ag-dots button:hover {
+  background: var(--accent-dark);
+}
+
+.ag-dots button.is-active {
+  width: 30px;
+  background: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ag-progress {
+    display: none;
+  }
 }
 
 .about-text p {
@@ -507,6 +660,18 @@ section {
   background: var(--panel);
 }
 
+a.stat {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+a.stat:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px rgba(14, 40, 28, 0.08);
+}
+
 .stat .num {
   font-family: var(--font-display);
   font-size: 2rem;
@@ -528,6 +693,13 @@ section {
   .about-media {
     margin-bottom: 30px;
   }
+  .ag-deck {
+    width: calc(100% - 50px);
+    aspect-ratio: 1 / 1;
+  }
+  .ag-next {
+    right: -14px;
+  }
 }
 
 /* ---------- Catalog ---------- */
@@ -539,8 +711,8 @@ section {
 }
 
 .chip {
-  border: 1px solid var(--line);
-  background: var(--panel);
+  border: 1px solid transparent;
+  background: #f0f2f1; /* grigio chiaro */
   color: var(--muted);
   padding: 9px 18px;
   border-radius: 99px;
@@ -550,13 +722,13 @@ section {
 }
 
 .chip:hover {
-  border-color: var(--accent);
-  color: var(--accent-dark);
+  background: #e2e6e4; /* grigio leggermente più scuro al passaggio del mouse */
+  color: var(--text);
 }
 
 .chip.active {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: #5c3a21; /* marrone scuro */
+  border-color: #5c3a21;
   color: #fff;
 }
 
@@ -968,6 +1140,12 @@ a.contact-card:hover {
 
 .contact-card p {
   overflow-wrap: anywhere;
+}
+
+.contact-card p.email-text {
+  white-space: nowrap;
+  letter-spacing: -0.015em;
+  font-size: 0.8rem;
 }
 
 .contact-card .ico {

@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { categories } from "../data/catalog.js";
+import AboutGallery from "./AboutGallery.jsx";
 import SectionKicker from "./SectionKicker.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,6 +13,7 @@ const stats = [
     value: categories.reduce((n, c) => n + c.items.length, 0),
     suffix: "",
     label: "Articoli a catalogo",
+    href: "#catalogo",
   },
   { value: 16, suffix: "", label: "Marchi trattati" },
   { value: 100, suffix: "%", label: "Assemblaggi su misura" },
@@ -66,44 +68,46 @@ export default function About() {
         </div>
         <div className="about-grid">
           <div className="about-media">
-            <img
-              className="main-img"
-              src="/images/motori-banco.jpg"
-              alt="Motori Loncin e Honda sul banco di lavoro"
-            />
-            <img
-              className="poster"
-              src="/images/stihl-vintage.jpg"
-              alt="Poster Stihl d'epoca"
-            />
+            <AboutGallery />
           </div>
           <div className="about-text">
             <p>
-              Da sempre lavoriamo con le mani sul motore. In officina trovi{" "}
-              <strong>macchine complete dei migliori marchi</strong> — Stihl,
-              Honda, Kawasaki, Bertolini, Orec — ma anche qualcosa che dai
-              grandi rivenditori non trovi:{" "}
-              <strong>macchine assemblate su richiesta</strong>.
+              Da sempre lavoriamo con le mani sui motori per offrire soluzioni
+              concrete a chi lavora la terra. In officina non proponiamo
+              soltanto attrezzature pronte all'uso, ma ci dedichiamo a qualcosa
+              che fa davvero la differenza:{" "}
+              <strong>progettiamo e assembliamo macchine su misura</strong>{" "}
+              per rispondere alle tue reali esigenze.
             </p>
             <p>
-              Scegli il telaio, scegli il motore, e la tua motozappa o il tuo
-              decespugliatore lo mettiamo insieme noi, con{" "}
-              <strong>controllo qualità e ricambi garantiti</strong> anche sui
-              motori di importazione.
+              Puoi selezionare il telaio e abbinare il motore più adatto al tuo
+              lavoro. Costruiamo la tua motozappa o il tuo decespugliatore pezzo
+              dopo pezzo, garantendo un rigoroso <strong>controllo qualità</strong> e
+              la piena disponibilità dei <strong>ricambi</strong>, assicurando
+              massima affidabilità anche sulle componenti di importazione.
             </p>
             <p>
-              E dopo la vendita non spariamo: assistenza, tagliandi e ricambi
-              sono il nostro pane quotidiano.
+              Il nostro supporto non termina con l'acquisto. La vera forza
+              della nostra officina è l'<strong>assistenza tecnica continua</strong>:
+              riparazioni, manutenzioni e fornitura rapida di ricambi sono il
+              nostro impegno quotidiano per non lasciarti mai fermo.
             </p>
             <div className="stats">
-              {stats.map((s) => (
-                <div className="stat" key={s.label}>
-                  <div className="num" data-value={s.value} data-suffix={s.suffix}>
-                    0
-                  </div>
-                  <div className="lbl">{s.label}</div>
-                </div>
-              ))}
+              {stats.map((s) => {
+                const Wrapper = s.href ? "a" : "div";
+                return (
+                  <Wrapper
+                    className="stat"
+                    key={s.label}
+                    {...(s.href ? { href: s.href } : {})}
+                  >
+                    <div className="num" data-value={s.value} data-suffix={s.suffix}>
+                      {s.value}
+                    </div>
+                    <div className="lbl">{s.label}</div>
+                  </Wrapper>
+                );
+              })}
             </div>
           </div>
         </div>

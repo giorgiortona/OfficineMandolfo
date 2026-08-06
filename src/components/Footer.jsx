@@ -86,6 +86,17 @@ export default function Footer() {
             <SectionKicker>Contatti</SectionKicker>
             <h2>Passa in officina</h2>
           </div>
+          <div className="map-embed" style={{ width: '100%', height: '380px', borderRadius: 'var(--radius)', overflow: 'hidden', marginBottom: '40px', border: '1px solid var(--line)' }}>
+            <iframe 
+              src="https://maps.google.com/maps?q=Officine+Mandolfo+Srl,+Via+Einaudi+90,+Nard%C3%B2&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div className="contact-grid">
             {cards.map((c) =>
               c.href ? (
@@ -98,13 +109,13 @@ export default function Footer() {
                 >
                   {c.ico && <div className="ico">{c.ico}</div>}
                   <h4>{c.title}</h4>
-                  <p>{c.text}</p>
+                  <p className={c.title === "Email" ? "email-text" : ""}>{c.text}</p>
                 </a>
               ) : (
                 <div className="contact-card" key={c.title}>
                   {c.ico && <div className="ico">{c.ico}</div>}
                   <h4>{c.title}</h4>
-                  <p>{c.text}</p>
+                  <p className={c.title === "Email" ? "email-text" : ""}>{c.text}</p>
                 </div>
               )
             )}
