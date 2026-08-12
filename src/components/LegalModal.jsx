@@ -17,11 +17,18 @@ export default function LegalModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className={`modal-overlay ${isOpen ? "open" : ""}`} onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '800px', padding: '30px' }}>
-        <button className="modal-close" onClick={onClose}>✕</button>
-        <div style={{ marginBottom: '20px', display: 'flex', gap: '15px' }}>
+    <div
+      className={`modal-overlay ${isOpen ? "open" : ""}`}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Privacy e Cookie Policy"
+    >
+      <div className="modal-content legal-modal" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose} aria-label="Chiudi informativa">✕</button>
+        <div className="legal-tabs">
           <button 
+            className={tab === 'privacy' ? 'active' : ''}
             style={{ 
               background: 'none', border: 'none', fontSize: '1.2rem', fontWeight: 700,
               color: tab === 'privacy' ? 'var(--accent)' : 'var(--muted)',
@@ -34,6 +41,7 @@ export default function LegalModal({ isOpen, onClose }) {
             Privacy Policy
           </button>
           <button 
+            className={tab === 'cookie' ? 'active' : ''}
             style={{ 
               background: 'none', border: 'none', fontSize: '1.2rem', fontWeight: 700,
               color: tab === 'cookie' ? 'var(--accent)' : 'var(--muted)',
@@ -47,7 +55,7 @@ export default function LegalModal({ isOpen, onClose }) {
           </button>
         </div>
         
-        <div className="modal-body" style={{ padding: 0, textAlign: 'left', lineHeight: 1.7 }}>
+        <div className="modal-body legal-body">
           {tab === "privacy" && (
             <div>
               <p>In ottemperanza agli obblighi previsti dal Regolamento (UE) 2016/679 (GDPR), la presente informativa descrive le modalità di gestione del sito web in riferimento al trattamento dei dati personali degli utenti che lo consultano.</p>

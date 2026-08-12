@@ -14,12 +14,18 @@ export default function ProductModal({ product, onClose }) {
   }, [product]);
 
   return (
-    <div className={`modal-overlay ${product ? "open" : ""}`} onClick={onClose}>
+    <div
+      className={`modal-overlay ${product ? "open" : ""}`}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={product ? `Scheda prodotto: ${product.title}` : "Scheda prodotto"}
+    >
       <div
         className="modal-content"
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close" onClick={onClose}>
+        <button className="modal-close" onClick={onClose} aria-label="Chiudi scheda prodotto">
           ✕
         </button>
         {product && (

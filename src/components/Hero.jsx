@@ -10,7 +10,7 @@ const SLIDES = [
   { src: "/images/motori-banco.jpg", pos: "center 60%" },
   { src: "/images/generatore-kipor.jpg", pos: "center 45%" },
   { src: "/images/motoseghe-scaffale.jpg", pos: "center 45%" },
-  { src: "/images/macchine.jpeg", pos: "center" },
+  { src: "/images/motozappe.jpeg", pos: "center" },
   { src: "/images/oli-scaffale.jpg", pos: "center" },
 ];
 

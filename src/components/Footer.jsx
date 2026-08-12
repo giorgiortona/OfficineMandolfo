@@ -86,7 +86,7 @@ export default function Footer() {
             <SectionKicker>Contatti</SectionKicker>
             <h2>Passa in officina</h2>
           </div>
-          <div className="map-embed" style={{ width: '100%', height: '380px', borderRadius: 'var(--radius)', overflow: 'hidden', marginBottom: '40px', border: '1px solid var(--line)' }}>
+          <div className="map-embed">
             <iframe 
               src="https://maps.google.com/maps?q=Officine+Mandolfo+Srl,+Via+Einaudi+90,+Nard%C3%B2&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               width="100%" 

@@ -100,7 +100,15 @@ export default function Catalog() {
               className="product" 
               key={active + i}
               onClick={() => setSelectedProduct(item)}
-              style={{ cursor: "pointer" }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  setSelectedProduct(item);
+                }
+              }}
+              role="button"
+              tabIndex="0"
+              aria-label={`Apri la scheda di ${item.title}`}
             >
               <Thumb item={item} />
               <div className="product-body">

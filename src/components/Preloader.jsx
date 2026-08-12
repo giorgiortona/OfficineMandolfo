@@ -154,7 +154,10 @@ export default function Preloader({ onDone }) {
           root.current,
           { xPercent: 105, duration: 0.75, ease: "power4.inOut" },
           "via+=0.95"
-        );
+        )
+        // Su smartphone l'ingresso resta riconoscibile, ma non rallenta
+        // l'accesso ai contenuti e alle azioni principali.
+        .timeScale(window.matchMedia("(max-width: 700px)").matches ? 1.35 : 1);
     }, root);
     return () => ctx.revert();
   }, [onDone]);

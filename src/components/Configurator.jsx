@@ -206,17 +206,20 @@ export default function Configurator() {
               Ti ricontattiamo con prezzo e tempi di assemblaggio. Nessun
               impegno.
             </p>
-            <a
-              href={complete ? whatsappUrl() : undefined}
-              target={complete ? "_blank" : undefined}
-              rel={complete ? "noopener" : undefined}
-            >
-              <button className="btn btn-primary" disabled={!complete}>
-                {complete
-                  ? "Richiedi il preventivo →"
-                  : "Completa le scelte obbligatorie"}
+            {complete ? (
+              <a
+                className="btn btn-primary"
+                href={whatsappUrl()}
+                target="_blank"
+                rel="noopener"
+              >
+                Richiedi il preventivo →
+              </a>
+            ) : (
+              <button className="btn btn-primary" disabled>
+                Completa le scelte obbligatorie
               </button>
-            </a>
+            )}
           </aside>
         </div>
       </div>
