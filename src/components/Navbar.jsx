@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const links = [
   { href: "#officina", label: "L'officina" },
@@ -10,6 +10,7 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButton = useRef(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -20,7 +21,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const onKeyDown = (event) => {
-      if (event.key === "Escape") setMenuOpen(false);
+      if (event.key === "Escape" && menuOpen) {
+        setMenuOpen(false);
+        menuButton.current?.focus();
+      }
     };
     const onResize = () => {
       if (window.innerWidth > 860) setMenuOpen(false);
@@ -31,7 +35,12 @@ export default function Navbar() {
       window.removeEventListener("keydown", onKeyDown);
       window.removeEventListener("resize", onResize);
     };
-  }, []);
+  }, [menuOpen]);
+
+  useEffect(() => {
+    document.body.classList.toggle("nav-menu-open", menuOpen);
+    return () => document.body.classList.remove("nav-menu-open");
+  }, [menuOpen]);
 
   const closeMenu = () => setMenuOpen(false);
   const whatsappUrl = `https://wa.me/393518027726?text=${encodeURIComponent(
@@ -75,14 +84,19 @@ export default function Navbar() {
           <button
             className="menu-toggle"
             type="button"
+            ref={menuButton}
             aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
             aria-controls="mobile-navigation"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
           >
-            <span />
-            <span />
-            <span />
+            <span className="menu-toggle-text" aria-hidden="true">
+              {menuOpen ? "Chiudi" : "Menu"}
+            </span>
+            <span className="menu-toggle-icon" aria-hidden="true">
+              <span />
+              <span />
+            </span>
           </button>
         </div>
       </div>
@@ -92,20 +106,42 @@ export default function Navbar() {
         id="mobile-navigation"
         aria-hidden={!menuOpen}
       >
+        <div className="mobile-menu-intro" aria-hidden="true">
+          <span>Officine Mandolfo</span>
+          <p>Macchine agricole · Nardò</p>
+        </div>
         <nav className="mobile-menu-links" aria-label="Navigazione mobile">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <a key={link.href} href={link.href} onClick={closeMenu}>
-              <span>{link.label}</span>
-              <span aria-hidden="true">→</span>
+              <span className="mobile-menu-number" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span className="mobile-menu-label">{link.label}</span>
+              <span className="mobile-menu-arrow" aria-hidden="true">↗</span>
             </a>
           ))}
         </nav>
         <div className="mobile-menu-actions">
-          <a href="tel:+390833578020">Chiama l'officina</a>
-          <a href={whatsappUrl} target="_blank" rel="noopener">
-            Scrivici su WhatsApp
+          <a
+            className="mobile-menu-action primary"
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener"
+            onClick={closeMenu}
+          >
+            <span>WhatsApp</span>
+            <small>Chiedi un preventivo →</small>
+          </a>
+          <a
+            className="mobile-menu-action"
+            href="tel:+390833578020"
+            onClick={closeMenu}
+          >
+            <span>Chiama l'officina</span>
+            <small>0833 578020</small>
           </a>
         </div>
+        <p className="mobile-menu-meta">Via Einaudi 90 · 73048 Nardò (LE)</p>
       </div>
     </header>
   );
