@@ -90,9 +90,6 @@ export default function Navbar() {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}
           >
-            <span className="menu-toggle-text" aria-hidden="true">
-              {menuOpen ? "Chiudi" : "Menu"}
-            </span>
             <span className="menu-toggle-icon" aria-hidden="true">
               <span />
               <span />

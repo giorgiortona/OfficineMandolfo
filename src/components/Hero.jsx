@@ -102,15 +102,18 @@ export default function Hero() {
       <div className="container hero-content">
         <h1>
           <span className="line">
-            <span>Macchine che</span>
+            <span>Dalla nostra</span>
+          </span>
+          <span className="line">
+            <span>officina,</span>
           </span>
           <span className="line">
             <span>
-              lavorano <em>sodo</em>,
+              la <em>forza</em> per
             </span>
           </span>
           <span className="line">
-            <span>come te.</span>
+            <span>il tuo lavoro.</span>
           </span>
         </h1>
         <p className="hero-sub">
