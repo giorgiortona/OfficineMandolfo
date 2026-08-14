@@ -104,7 +104,7 @@ export const categories = [
       {
         title: "Pasbo 10cv — Loncin 14cv",
         detail: "Cambio Pasbo, montaggio su richiesta",
-        img: "https://www.pezzellaagrigarden.it/wp-content/uploads/2020/11/G-83-KOHLER-OK-1.jpg",
+        img: "/images/motozappa_red.png",
         description:
           "Motozappa costruita sul cambio Pasbo, azienda salentina che dal 1959 produce motozappe professionali nei suoi stabilimenti in provincia di Lecce — roba di casa nostra, con i ricambi a un'ora di strada. Trasmissione a ingranaggi in bagno d'olio con 3 marce avanti più retromarcia e frizione conica a secco: è il gruppo che regge il lavoro pesante, quello che gli assemblati economici non fanno. Fresa da 105 cm a 6 elementi per lato più dischi laterali. Il montaggio è su richiesta: scegli tu la motorizzazione — qui è abbinato a un Loncin benzina di classe 14 CV — e la macchina la componiamo in officina.",
         features: [
@@ -150,7 +150,7 @@ export const categories = [
       {
         title: "Pasbo G94 Diesel",
         detail: "Loncin diesel 10cv, 3 marce, avviamento elettrico",
-        img: "https://www.pezzellaagrigarden.it/wp-content/uploads/2021/06/G94-600x600.jpg",
+        img: "/images/motozappa_orange.png",
         description:
           "La Pasbo G94 è il modello di punta della casa salentina: cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio e frizione conica, fresa a 6 elementi per lato con dischi che porta la larghezza di lavoro a 105-115 cm. Qui è motorizzata con il Loncin diesel da 10 CV con avviamento elettrico a batteria: gasolio significa consumi più bassi e meno calore nelle giornate lunghe, e la chiave significa non dover più tirare la fune con un motore freddo. È la macchina per chi ha terreno vero da lavorare, non l'orto dietro casa.",
         features: [
@@ -1166,6 +1166,29 @@ export const categories = [
           { label: "Peso", value: "4.3 kg" }
         ]
       },
+    ],
+  },
+  {
+    id: "atomizzatori",
+    label: "Atomizzatori",
+    tagline: "Trattamenti professionali",
+    items: [
+      {
+        title: "Kasei 3WFB-30E",
+        detail: "Atomizzatore a zaino a scoppio",
+        img: "/images/kasei_3wfb.jpeg",
+        description:
+          "L’atomizzatore Kasei 3WFB-30 a scoppio è molto potente, adatto a tutti i tipi di trattamento professionali nella funzione di nebulizzatore con una pompa supplementare che ne aumenta l’efficienza. Accessorio opzionale: kit polveri.",
+        features: [
+          "Pompa spinta liquidi integrata",
+          "Funzione nebulizzatore professionale",
+          "Kit polveri opzionale",
+        ],
+        specs: [
+          { label: "Motore", value: "A scoppio" },
+          { label: "Modello", value: "3WFB-30E" }
+        ]
+      }
     ],
   },
 ];
