@@ -28,19 +28,58 @@ function Thumb({ item }) {
   );
 }
 
+// Testo cercabile di un articolo: titolo, sottotitolo, descrizione, categoria,
+// specifiche e dotazione. Senza accenti e in minuscolo per ricerche "morbide".
+const normalize = (s) =>
+  (s ?? "")
+    .toString()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "");
+
+const searchIndex = (item) =>
+  normalize(
+    [
+      item.title,
+      item.detail,
+      item.description,
+      item.category,
+      ...(item.specs ?? []).map((s) => `${s.label} ${s.value}`),
+      ...(item.features ?? []),
+    ]
+      .filter(Boolean)
+      .join(" ")
+  );
+
 export default function Catalog() {
   const root = useRef(null);
   const grid = useRef(null);
   const [active, setActive] = useState("motozappe");
+  const [query, setQuery] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  const searching = query.trim() !== "";
+
   const items = useMemo(() => {
+    // Con una ricerca attiva si cerca in tutto il catalogo, non solo
+    // nella categoria selezionata.
     const cats =
-      active === "all" ? categories : categories.filter((c) => c.id === active);
-    return cats.flatMap((c) =>
+      active === "all" || searching
+        ? categories
+        : categories.filter((c) => c.id === active);
+    const all = cats.flatMap((c) =>
       c.items.map((it) => ({ ...it, category: c.label }))
     );
-  }, [active]);
+
+    if (!searching) return all;
+
+    // Tutte le parole digitate devono comparire nell'articolo.
+    const tokens = normalize(query).split(/\s+/).filter(Boolean);
+    return all.filter((it) => {
+      const haystack = searchIndex(it);
+      return tokens.every((t) => haystack.includes(t));
+    });
+  }, [active, query, searching]);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -69,36 +108,101 @@ export default function Catalog() {
           <SectionKicker>Catalogo</SectionKicker>
           <h2>Attrezzature per ogni lavoro</h2>
           <p>
-            {items.length} articoli in{" "}
-            {active === "all" ? categories.length : 1}{" "}
-            {active === "all" ? "categorie" : "categoria"}. I prezzi indicati sono già scontati
-            rispetto al listino; per il resto, chiedici un preventivo.
+            {searching ? (
+              <>
+                {items.length}{" "}
+                {items.length === 1 ? "articolo trovato" : "articoli trovati"} in
+                tutto il catalogo per «{query.trim()}».
+              </>
+            ) : (
+              <>
+                {items.length} articoli in{" "}
+                {active === "all" ? categories.length : 1}{" "}
+                {active === "all" ? "categorie" : "categoria"}. I prezzi indicati sono già scontati
+                rispetto al listino; per il resto, chiedici un preventivo.
+              </>
+            )}
           </p>
+        </div>
+
+        <div className="cat-search">
+          <svg
+            className="cat-search-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <line x1="16.5" y1="16.5" x2="21" y2="21" />
+          </svg>
+          <input
+            type="search"
+            className="cat-search-input"
+            placeholder="Cerca un articolo, un motore, una misura…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            aria-label="Cerca nel catalogo"
+          />
+          {searching && (
+            <button
+              type="button"
+              className="cat-search-clear"
+              onClick={() => setQuery("")}
+              aria-label="Cancella la ricerca"
+            >
+              ✕
+            </button>
+          )}
         </div>
 
         <div className="cat-filters">
           <button
-            className={`chip ${active === "all" ? "active" : ""}`}
-            onClick={() => setActive("all")}
+            className={`chip ${active === "all" && !searching ? "active" : ""}`}
+            onClick={() => {
+              setActive("all");
+              setQuery("");
+            }}
           >
             Tutti
           </button>
           {categories.map((c) => (
             <button
               key={c.id}
-              className={`chip ${active === c.id ? "active" : ""}`}
-              onClick={() => setActive(c.id)}
+              className={`chip ${active === c.id && !searching ? "active" : ""}`}
+              onClick={() => {
+                setActive(c.id);
+                setQuery("");
+              }}
             >
               {c.label}
             </button>
           ))}
         </div>
 
+        {searching && items.length === 0 && (
+          <p className="cat-empty">
+            Nessun articolo corrisponde a «{query.trim()}». Prova con un altro
+            termine oppure{" "}
+            <button
+              type="button"
+              className="cat-empty-reset"
+              onClick={() => setQuery("")}
+            >
+              sfoglia il catalogo
+            </button>
+            : se cerchi qualcosa che non vedi, chiedicelo — spesso lo troviamo o
+            lo assembliamo noi.
+          </p>
+        )}
+
         <div className="cat-grid" ref={grid}>
           {items.map((item, i) => (
             <article 
               className="product" 
-              key={active + i}
+              key={`${active}|${query}|${i}`}
               onClick={() => setSelectedProduct(item)}
               onKeyDown={(event) => {
                 if (event.key === "Enter" || event.key === " ") {

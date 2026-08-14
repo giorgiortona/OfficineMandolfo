@@ -46,18 +46,39 @@ export default function ProductModal({ product, onClose }) {
             </div>
             <div className="modal-body">
               {product.detail && <p>{product.detail}</p>}
-              
+
+              {product.description && (
+                <div className="modal-section">
+                  <h4 className="modal-section-title">Descrizione</h4>
+                  <p className="modal-description">{product.description}</p>
+                </div>
+              )}
+
               {product.specs && product.specs.length > 0 ? (
-                <ul className="specs-list">
-                  {product.specs.map((spec, i) => (
-                    <li key={i}>
-                      <span className="spec-label">{spec.label}</span>
-                      <span className="spec-value">{spec.value}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="modal-section">
+                  <h4 className="modal-section-title">Scheda tecnica</h4>
+                  <ul className="specs-list">
+                    {product.specs.map((spec, i) => (
+                      <li key={i}>
+                        <span className="spec-label">{spec.label}</span>
+                        <span className="spec-value">{spec.value}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ) : (
                 <p>Nessuna specifica aggiuntiva disponibile.</p>
+              )}
+
+              {product.features && product.features.length > 0 && (
+                <div className="modal-section">
+                  <h4 className="modal-section-title">Dotazione e caratteristiche</h4>
+                  <ul className="features-list">
+                    {product.features.map((f, i) => (
+                      <li key={i}>{f}</li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </div>
           </>
