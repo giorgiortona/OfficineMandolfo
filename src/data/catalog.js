@@ -1,4 +1,4 @@
-// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 53 articoli, 11 categorie.
+// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 55 articoli, 13 categorie.
 // I prezzi mancanti sono "su preventivo". Le immagini puntano ai siti di rivenditori/produttori.
 
 export const categories = [
@@ -102,33 +102,29 @@ export const categories = [
         ]
       },
       {
-        title: "Pasbo 10cv — Loncin 14cv",
-        detail: "Cambio Pasbo, montaggio su richiesta",
+        title: "Motozappa GZK con motore Honda 6,5 CV",
+        detail: "Motozappa GZK con motore Honda a benzina",
         img: "/images/motozappa_red.png",
         description:
-          "Motozappa costruita sul cambio Pasbo, azienda salentina che dal 1959 produce motozappe professionali nei suoi stabilimenti in provincia di Lecce — roba di casa nostra, con i ricambi a un'ora di strada. Trasmissione a ingranaggi in bagno d'olio con 3 marce avanti più retromarcia e frizione conica a secco: è il gruppo che regge il lavoro pesante, quello che gli assemblati economici non fanno. Fresa da 105 cm a 6 elementi per lato più dischi laterali. Il montaggio è su richiesta: scegli tu la motorizzazione — qui è abbinato a un Loncin benzina di classe 14 CV — e la macchina la componiamo in officina.",
+          "Motozappa GZK equipaggiata con motore Honda a benzina da 6,5 CV. Una configurazione indicata per la preparazione dell'orto e per le lavorazioni periodiche del terreno, con una motorizzazione affidabile e semplice da avviare. Per conoscere allestimento, larghezza della fresa e disponibilità, contatta l'officina: la macchina viene proposta su preventivo.",
         features: [
-          "Cambio Pasbo, produzione italiana dal 1959",
-          "Trasmissione a ingranaggi in bagno d'olio",
-          "Frizione conica a secco",
-          "3 marce avanti più retromarcia",
-          "Fresa a 6 elementi per lato più dischi laterali",
-          "Montaggio e scelta della motorizzazione su richiesta",
+          "Motore Honda a benzina",
+          "Potenza dichiarata di 6,5 CV",
+          "Adatta alla preparazione dell'orto e alla lavorazione del terreno",
+          "Disponibilità e allestimento da verificare in officina",
         ],
         specs: [
-          { label: "Motore", value: "Loncin Benzina, classe 14 CV" },
-          { label: "Cambio", value: "3 Marce AV + 1 RM" },
-          { label: "Trasmissione", value: "Ingranaggi in bagno d'olio" },
-          { label: "Frizione", value: "Conica a secco" },
-          { label: "Fresa", value: "105 cm, 6 elementi per lato più dischi" }
+          { label: "Modello", value: "GZK" },
+          { label: "Motore", value: "Honda a benzina" },
+          { label: "Potenza dichiarata", value: "6,5 CV" }
         ]
       },
       {
-        title: "Diesse 83 — Lombardini 15LD225",
-        detail: "10cv diesel, due marce + retromarcia",
+        title: "Diesse 2 marce + retro — Loncin 6,5 CV",
+        detail: "Motore Loncin a benzina, 2 marce avanti + retromarcia",
         img: "https://diesseagri.it/wp-content/uploads/2025/05/115-600x810.jpg",
         description:
-          "Motozappa Diesse DS 83 EN in versione diesel, con motore Lombardini 15LD225 da 10 HP e avviamento a strappo con autoavvolgente. Stesso telaio e stessa trasmissione della versione a benzina: frizione conica a bagno d'olio, cambio a 2 velocità più una retromarcia ad ingranaggi in bagno d'olio, presa di forza, stegola di guida registrabile e dispositivo di sicurezza antinfortunistico. Fresa a 6 elementi più dischi da 95 cm, con larghezza di lavoro regolabile da 70 a 120 cm.",
+          "Motozappa Diesse con motore Loncin a benzina da 6,5 CV e avviamento a strappo con autoavvolgente. La trasmissione dispone di 2 marce avanti più retromarcia, con ingranaggi in bagno d'olio e frizione conica a bagno d'olio. Completa di presa di forza, stegola di guida registrabile e dispositivo di sicurezza antinfortunistico. La fresa a 6 elementi con dischi laterali permette di preparare il terreno con una macchina robusta e adatta alle lavorazioni più impegnative.",
         features: [
           "Frizione conica a bagno d'olio",
           "Cambio 2 velocità + 1 retromarcia ad ingranaggi in bagno d'olio",
@@ -138,13 +134,12 @@ export const categories = [
           "Fresa a 6 elementi più dischi laterali",
         ],
         specs: [
-          { label: "Motore", value: "Lombardini 15LD225 Diesel" },
-          { label: "Potenza", value: "10 HP" },
-          { label: "Avviamento", value: "A strappo autoavvolgente" },
+          { label: "Motore", value: "Loncin a benzina" },
+          { label: "Potenza dichiarata", value: "6,5 CV" },
+          { label: "Avviamento", value: "A strappo con autoavvolgente" },
           { label: "Frizione", value: "Conica a bagno d'olio" },
           { label: "Cambio", value: "2 Marce AV + 1 RM ad ingranaggi in bagno d'olio" },
-          { label: "Fresa", value: "6 elementi più dischi (95 cm)" },
-          { label: "Larghezza di lavoro", value: "Da 70 a 120 cm" }
+          { label: "Fresa", value: "6 elementi più dischi laterali" }
         ]
       },
       {
@@ -634,6 +629,37 @@ export const categories = [
     ],
   },
   {
+    id: "spaccalegna",
+    label: "Spaccalegna",
+    tagline: "Potenza idraulica per la legna",
+    items: [
+      {
+        title: "Spaccalegna 10 tonnellate",
+        detail: "Idraulico orizzontale con motore a benzina",
+        img: "/images/spaccalegna-10t-1.jpg",
+        images: [
+          "/images/spaccalegna-10t-1.jpg",
+          "/images/spaccalegna-10t-2.jpg",
+          "/images/spaccalegna-10t-3.jpg",
+        ],
+        description:
+          "Spaccalegna idraulico orizzontale con forza di spinta da 10 tonnellate, motore a benzina e ruote per agevolarne lo spostamento. Disponibile su preventivo.",
+        features: [
+          "Forza di spinta da 10 tonnellate",
+          "Funzionamento idraulico",
+          "Motore a benzina",
+          "Struttura orizzontale su ruote",
+        ],
+        specs: [
+          { label: "Forza di spinta", value: "10 tonnellate" },
+          { label: "Azionamento", value: "Motore a benzina" },
+          { label: "Configurazione", value: "Orizzontale" },
+          { label: "Trasporto", value: "Ruote pneumatiche" }
+        ]
+      },
+    ],
+  },
+  {
     id: "trinciasarmenti",
     label: "Trinciasarmenti a Cingoli",
     tagline: "Per i terreni più difficili",
@@ -770,7 +796,7 @@ export const categories = [
       },
       {
         title: "Stihl FS220",
-        img: "https://www.casadelcuscinettomasi.it/wp-content/uploads/2025/03/STIHL_FS_240R_Casa_del_cuscinetto_786621.jpg",
+        img: null,
         description:
           "Decespugliatore Stihl FS 220 a due tempi da 35,2 cm³ e 1,7 kW / 2,3 CV: la macchina della gamma dedicata all'uso intensivo e agricolo, per sfoltire vegetazione resistente, sterpaglia e terreni incolti dove i modelli hobbistici non arrivano. Impugnatura a manubrio e sistema antivibrante per reggere lunghe giornate di lavoro. Serbatoio da 0,58 litri e peso di 7,7 kg a vuoto.",
         features: [
@@ -889,6 +915,46 @@ export const categories = [
     label: "Trattorini per Prato",
     tagline: "Comfort e potenza di taglio",
     items: [
+      {
+        title: "Cub Cadet XT2 PS107",
+        detail: "Kawasaki V-Twin 603 cc, piatto bilama da 107 cm",
+        img: "/images/cub-cadet-xt2-ps107.jpg",
+        description:
+          "Trattorino rasaerba Cub Cadet XT2 PS107 della serie Enduro, progettato per tagliare rapidamente prati ampi e muoversi con precisione anche attorno ad alberi e aiuole. Il motore Kawasaki V-Twin da 603 cm³ eroga 9,8 kW a 2.300 giri/min, mentre la trasmissione idrostatica a pedale consente di regolare in modo continuo avanzamento e retromarcia senza cambiare marcia. Il piatto stampato da 107 cm utilizza due lame, scarico laterale e innesto elettromagnetico; altezza regolabile in 12 posizioni da 25 a 100 mm, kit mulching e lame mulching di serie. Il sistema Tight Turn xTreme riduce il raggio di sterzata a soli 17 cm. Telaio saldato, assale anteriore in ghisa, fari LED, cruise control e sedile alto regolabile completano una macchina robusta e confortevole, con cesto da 200 litri disponibile come accessorio.",
+        features: [
+          "Motore Kawasaki V-Twin bicilindrico da 603 cm³",
+          "Trasmissione idrostatica a pedale con velocità continua",
+          "Cruise control di serie",
+          "Piatto stampato da 107 cm con due lame",
+          "Scarico laterale e kit mulching di serie",
+          "Innesto elettrico delle lame",
+          "Dodici altezze di taglio da 25 a 100 mm",
+          "Raggio di sterzata Tight Turn xTreme di 17 cm",
+          "Taglio in retromarcia RevTEK",
+          "Telaio saldato, assale anteriore in ghisa e fari LED",
+          "Sedile Cut & Sew con schienale alto, regolabile in 10 posizioni",
+          "Cesto di raccolta da 200 litri disponibile come accessorio",
+        ],
+        specs: [
+          { label: "Codice modello", value: "13AGA1TS603" },
+          { label: "Motore", value: "Kawasaki V-Twin bicilindrico" },
+          { label: "Cilindrata", value: "603 cm³" },
+          { label: "Potenza nominale", value: "9,8 kW a 2.300 giri/min" },
+          { label: "Serbatoio", value: "11,4 litri" },
+          { label: "Trasmissione", value: "Idrostatica a pedale, AV/RM continua" },
+          { label: "Superficie oraria indicativa", value: "Fino a 8.500 m²/h" },
+          { label: "Larghezza di taglio", value: "107 cm" },
+          { label: "Piatto", value: "Stampato, 2 lame, 2 ruote antiscalpo" },
+          { label: "Altezza di taglio", value: "25 - 100 mm (12 posizioni)" },
+          { label: "Innesto lame", value: "Elettromagnetico" },
+          { label: "Sistemi di taglio", value: "Scarico laterale e mulching; raccolta opzionale" },
+          { label: "Cesto opzionale", value: "200 litri (cod. 19A30030100)" },
+          { label: "Raggio di sterzata", value: "17 cm" },
+          { label: "Ruote", value: "15 x 6 ant. / 20 x 8 post." },
+          { label: "Dimensioni", value: "180 x 134 x 100 cm" },
+          { label: "Peso", value: "210 kg" }
+        ]
+      },
       {
         title: "Snapper RPX102 — B&S 7220",
         img: "https://www.centroverderovigo.com/wp-content/uploads/2025/01/snapper-trattorino-rpx102-tagliaerba-raccolta-ventrale-fdx1-000-768x596.jpg",

@@ -1595,6 +1595,10 @@ footer {
   transition: transform 0.3s ease;
 }
 
+.modal-content.has-gallery {
+  max-width: 780px;
+}
+
 .modal-overlay.open .modal-content {
   transform: translateY(0);
 }
@@ -1628,6 +1632,120 @@ footer {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.modal-header.with-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+  align-items: start;
+}
+
+.modal-gallery {
+  flex: 0 0 120px;
+  min-width: 0;
+}
+
+.modal-gallery-stage {
+  position: relative;
+}
+
+.modal-gallery.multiple {
+  width: 100%;
+}
+
+.modal-gallery.multiple .modal-gallery-stage {
+  height: 390px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f2f4f2;
+  outline: none;
+}
+
+.modal-gallery.multiple .modal-gallery-stage:focus-visible {
+  box-shadow: 0 0 0 3px rgba(28, 165, 13, 0.35);
+}
+
+.modal-gallery.multiple .modal-img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.modal-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background: rgba(7, 20, 14, 0.72);
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.modal-gallery-arrow:hover {
+  background: rgba(7, 20, 14, 0.9);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.modal-gallery-arrow.previous {
+  left: 12px;
+}
+
+.modal-gallery-arrow.next {
+  right: 12px;
+}
+
+.modal-gallery-counter {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(7, 20, 14, 0.72);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.modal-gallery-thumbnails {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 2px;
+  overflow-x: auto;
+}
+
+.modal-gallery-thumbnails button {
+  flex: 0 0 68px;
+  height: 68px;
+  padding: 3px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  background: #f2f4f2;
+  cursor: pointer;
+}
+
+.modal-gallery-thumbnails button.active {
+  border-color: var(--accent-dark);
+}
+
+.modal-gallery-thumbnails img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
 .modal-img {
@@ -1781,6 +1899,17 @@ footer {
   .modal-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .modal-header.with-gallery {
+    display: flex;
+    align-items: stretch;
+  }
+  .modal-gallery {
+    width: 100%;
+    flex-basis: auto;
+  }
+  .modal-gallery.multiple .modal-gallery-stage {
+    height: min(52svh, 390px);
   }
   .modal-img {
     width: 100%;

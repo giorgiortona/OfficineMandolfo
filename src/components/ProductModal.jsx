@@ -2,32 +2,110 @@ import { useEffect, useState } from "react";
 import { formatPrice } from "../data/catalog.js";
 import TractorLogo from "./TractorLogo.jsx";
 
-function ModalProductImage({ product }) {
+function ProductGallery({ product }) {
+  const images = product.images?.length
+    ? product.images
+    : product.img
+      ? [product.img]
+      : [];
+  const [activeIndex, setActiveIndex] = useState(0);
   const [broken, setBroken] = useState(false);
+  const hasMultipleImages = images.length > 1;
 
-  if (!product.img || broken) {
+  const showImage = (index) => {
+    setBroken(false);
+    setActiveIndex((index + images.length) % images.length);
+  };
+
+  if (images.length === 0) {
     return (
       <div
-        className="modal-img modal-img-placeholder"
+        className="modal-gallery"
         role="img"
         aria-label={`Immagine segnaposto per ${product.title}`}
       >
-        <TractorLogo className="modal-placeholder-tractor" />
+        <div className="modal-img modal-img-placeholder">
+          <TractorLogo className="modal-placeholder-tractor" />
+        </div>
       </div>
     );
   }
 
   return (
-    <img
-      src={product.img}
-      alt={product.title}
-      className="modal-img"
-      onError={() => setBroken(true)}
-    />
+    <div className={`modal-gallery ${hasMultipleImages ? "multiple" : ""}`}>
+      <div
+        className="modal-gallery-stage"
+        tabIndex={hasMultipleImages ? 0 : undefined}
+        onKeyDown={(event) => {
+          if (event.key === "ArrowLeft") showImage(activeIndex - 1);
+          if (event.key === "ArrowRight") showImage(activeIndex + 1);
+        }}
+      >
+        {broken ? (
+          <div
+            className="modal-img modal-img-placeholder"
+            role="img"
+            aria-label={`Immagine segnaposto per ${product.title}`}
+          >
+            <TractorLogo className="modal-placeholder-tractor" />
+          </div>
+        ) : (
+          <img
+            src={images[activeIndex]}
+            alt={`${product.title} — foto ${activeIndex + 1} di ${images.length}`}
+            className="modal-img"
+            onError={() => setBroken(true)}
+          />
+        )}
+
+        {hasMultipleImages && (
+          <>
+            <button
+              type="button"
+              className="modal-gallery-arrow previous"
+              onClick={() => showImage(activeIndex - 1)}
+              aria-label="Foto precedente"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              className="modal-gallery-arrow next"
+              onClick={() => showImage(activeIndex + 1)}
+              aria-label="Foto successiva"
+            >
+              ›
+            </button>
+            <span className="modal-gallery-counter" aria-live="polite">
+              {activeIndex + 1} / {images.length}
+            </span>
+          </>
+        )}
+      </div>
+
+      {hasMultipleImages && (
+        <div className="modal-gallery-thumbnails" aria-label="Seleziona una foto">
+          {images.map((image, index) => (
+            <button
+              type="button"
+              key={image}
+              className={index === activeIndex ? "active" : ""}
+              onClick={() => showImage(index)}
+              aria-label={`Vai alla foto ${index + 1} di ${images.length}`}
+              aria-current={index === activeIndex ? "true" : undefined}
+            >
+              <img src={image} alt="" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
 export default function ProductModal({ product, onClose }) {
+  const hasGallery = product?.images?.length > 1;
+
   useEffect(() => {
     if (product) {
       document.body.style.overflow = "hidden";
@@ -48,7 +126,7 @@ export default function ProductModal({ product, onClose }) {
       aria-label={product ? `Scheda prodotto: ${product.title}` : "Scheda prodotto"}
     >
       <div
-        className="modal-content"
+        className={`modal-content ${hasGallery ? "has-gallery" : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
         <button className="modal-close" onClick={onClose} aria-label="Chiudi scheda prodotto">
@@ -56,8 +134,8 @@ export default function ProductModal({ product, onClose }) {
         </button>
         {product && (
           <>
-            <div className="modal-header">
-              <ModalProductImage key={product.title} product={product} />
+            <div className={`modal-header ${hasGallery ? "with-gallery" : ""}`}>
+              <ProductGallery key={product.title} product={product} />
               <div className="modal-title-area">
                 <span className="modal-cat">{product.category}</span>
                 <h3 className="modal-title">{product.title}</h3>
