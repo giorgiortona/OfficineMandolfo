@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { categories, formatPrice } from "../data/catalog.js";
 import SectionKicker from "./SectionKicker.jsx";
 import ProductModal from "./ProductModal.jsx";
+import TractorLogo from "./TractorLogo.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,8 +12,12 @@ function Thumb({ item }) {
   const [broken, setBroken] = useState(false);
   if (!item.img || broken) {
     return (
-      <div className="product-thumb">
-        <span className="noimg">foto in arrivo</span>
+      <div
+        className="product-thumb product-thumb-placeholder"
+        role="img"
+        aria-label={`Immagine segnaposto per ${item.title}`}
+      >
+        <TractorLogo className="product-placeholder-tractor" />
       </div>
     );
   }

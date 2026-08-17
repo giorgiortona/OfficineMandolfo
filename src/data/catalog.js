@@ -708,6 +708,15 @@ export const categories = [
         title: "Obistica 45cc — asta AMA KD3 450",
         detail: "Motore di importazione, controllo qualità e ricambi",
         img: "https://www.faddagianni.it/5278-large_default/decespugliatore-ama-kawasaki-kd3-450.jpg",
+        description:
+          "Decespugliatore assemblato in officina con motore Obistica a 2 tempi da 45 cm³ e asta rigida AMA KD3 450 da 28 mm. È una soluzione concreta per lo sfalcio di erba alta, bordi, fossi e vegetazione più consistente, pensata per chi cerca una macchina semplice da mantenere senza sostenere il costo di una motorizzazione di marca. L'impugnatura singola facilita il lavoro negli spazi stretti e sui terreni irregolari; prima della consegna controlliamo l'assemblaggio e restiamo il riferimento per manutenzione e ricambi.",
+        features: [
+          "Assemblato e controllato nella nostra officina",
+          "Motore monocilindrico 2 tempi da 45 cm³",
+          "Asta rigida AMA da 28 mm",
+          "Impugnatura singola per una buona libertà di movimento",
+          "Assistenza e ricambi disponibili tramite l'officina",
+        ],
         specs: [
           { label: "Cilindrata", value: "45 cc (2 Tempi)" },
           { label: "Asta", value: "AMA KD3 450 (diametro 28 mm)" },
@@ -782,31 +791,69 @@ export const categories = [
         title: "Kawasaki TJ45E — asta MGF DK5100L",
         detail: "Assemblato in officina",
         img: "https://newgardenstore.eu/61687-large_default/Motore-completo-2-tempi-decespugliatore-TJ45E-KAWASAKI-45cc-SOSTITUTIVO.jpg",
+        description:
+          "Decespugliatore professionale assemblato in officina attorno al Kawasaki TJ45E: monocilindrico 2 tempi da 45,4 cm³, capace di 1,42 kW / 1,90 HP a 7.500 giri e 2,18 Nm di coppia a 5.000 giri. La potenza viene abbinata all'asta MGF DK5100L da 28 mm, con trasmissione antivibrante e coppia conica rinforzata, per affrontare erba alta, sterpaglie e lavori prolungati. Il carburatore a membrana consente di lavorare in diverse inclinazioni e l'avviamento Kawasaki KAR riduce lo sforzo necessario alla messa in moto.",
+        features: [
+          "Motore Kawasaki TJ45E professionale",
+          "Avviamento facilitato Kawasaki KAR",
+          "Carburatore a membrana e frizione centrifuga",
+          "Asta MGF DK5100L da 28 mm con sistema antivibrante",
+          "Coppia conica rinforzata per impieghi gravosi",
+          "Assemblaggio e assistenza nella nostra officina",
+        ],
         specs: [
           { label: "Cilindrata", value: "45.4 cc (2 Tempi)" },
-          { label: "Potenza", value: "1.9 HP" },
-          { label: "Asta", value: "MGF DK5100L Antivibrante" },
+          { label: "Potenza max", value: "1,42 kW / 1,90 HP a 7.500 giri/min" },
+          { label: "Coppia max", value: "2,18 Nm a 5.000 giri/min" },
+          { label: "Serbatoio", value: "0,9 litri" },
+          { label: "Asta", value: "MGF DK5100L antivibrante (28 mm)" },
           { label: "Coppia conica", value: "Rinforzata professionale" }
         ]
       },
       {
-        title: "Kawasaki TJ53E — asta MGF DK5100L",
+        title: "Kawasaki TJ53E — asta MGF DK6000L",
         detail: "Assemblato in officina",
         img: "https://www.bazargiusto.it/wp-content/uploads/2025/01/motore-completo-di-ricambio-per-decespugliatore-kawasaki-tj53e-1.jpg",
+        description:
+          "La configurazione più potente della gamma MGF con motore Kawasaki: il DK6000L monta il TJ53E da 53,2 cm³, capace di 2 kW / 2,68 HP a 8.500 giri e 3 Nm di coppia a 5.000 giri. L'asta rigida MGF da 28 mm, con sei boccole autolubrificanti e sistema antivibrante, rende l'insieme più controllabile nelle sessioni lunghe su erba fitta, sterpaglie e rovi. Il carburatore a membrana, la frizione centrifuga e l'avviamento Kawasaki KAR completano una macchina destinata allo sfalcio intensivo.",
+        features: [
+          "Motore Kawasaki TJ53E, il più potente della serie TJ",
+          "Volano bilanciato dinamicamente e pistone alleggerito",
+          "Avviamento facilitato Kawasaki KAR",
+          "Carburatore a membrana e frizione centrifuga",
+          "Asta MGF DK6000L da 28 mm con sei boccole autolubrificanti",
+          "Testina filo Batti e Vai e bretella doppia in dotazione",
+          "Assemblaggio e assistenza nella nostra officina",
+        ],
         specs: [
           { label: "Cilindrata", value: "53.2 cc (2 Tempi)" },
-          { label: "Potenza", value: "2.7 HP" },
-          { label: "Asta", value: "MGF Antivibrante 28 mm" },
-          { label: "Peso", value: "8.5 kg" }
+          { label: "Potenza max", value: "2,0 kW / 2,68 HP a 8.500 giri/min" },
+          { label: "Coppia max", value: "3,0 Nm a 5.000 giri/min" },
+          { label: "Serbatoio", value: "1,1 litri" },
+          { label: "Asta", value: "MGF DK6000L antivibrante (28 mm)" },
+          { label: "Passo", value: "10 x 1,25 FSx" },
+          { label: "Peso a secco", value: "8,95 kg" }
         ]
       },
       {
         title: "Kawasaki TJ53E — asta Honda MGF DH500V",
         detail: "Assemblato in officina",
         img: "https://www.fiaba.net/wp-content/uploads/2019/02/mgf-decespugliatore-kawasaki-honda-asta-interna-esterna.jpg",
+        description:
+          "Assemblato professionale che unisce la spinta del Kawasaki TJ53E da 53,2 cm³ all'asta di alta gamma MGF DH500V. Il motore sviluppa 2 kW / 2,68 HP a 8.500 giri e una coppia massima di 3 Nm, per lavorare con decisione su erba tenace, sottobosco e rovi. L'asta DH500V è scelta per la qualità della trasmissione e per il contenimento delle vibrazioni: una configurazione rivolta a chi usa il decespugliatore a lungo e vuole maggiore comfort senza rinunciare alla potenza del TJ53E.",
+        features: [
+          "Motore Kawasaki TJ53E da 53,2 cm³",
+          "Volano bilanciato per ridurre le vibrazioni",
+          "Avviamento facilitato Kawasaki KAR",
+          "Carburatore a membrana e frizione centrifuga",
+          "Asta MGF DH500V di alta gamma",
+          "Configurazione assemblata e assistita in officina",
+        ],
         specs: [
           { label: "Cilindrata", value: "53.2 cc (2 Tempi)" },
-          { label: "Potenza", value: "2.7 HP" },
+          { label: "Potenza max", value: "2,0 kW / 2,68 HP a 8.500 giri/min" },
+          { label: "Coppia max", value: "3,0 Nm a 5.000 giri/min" },
+          { label: "Serbatoio", value: "1,1 litri" },
           { label: "Asta", value: "Honda MGF DH500V Alta gamma" },
           { label: "Vibrazioni", value: "Ridotte al minimo" }
         ]
@@ -815,9 +862,22 @@ export const categories = [
         title: "Honda GX50 — asta AMA KD3 450X",
         detail: "4 tempi, assemblato in officina",
         img: "https://www.agricolbio.it/shop/3362-large_default/decespugliatore-a-impugnatura-singola-con-motore-4-tempi-honda-gx50-ohc-da-479-cc-asta-28-mm.jpg",
+        description:
+          "Decespugliatore assemblato con Honda GX50, monocilindrico OHC a benzina da 47,9 cm³ e 1,47 kW / 2 HP: offre la coppia di un motore di cilindrata importante senza richiedere la preparazione della miscela. Il GX50 può lavorare inclinato in qualsiasi posizione, caratteristica essenziale su scarpate e fossi, ed è abbinato a un'asta AMA da 28 mm. La distribuzione con cinghia a bagno d'olio contribuisce a contenere rumore e ingombri; consumi ridotti, avviamento autoavvolgente e risposta pronta ne fanno una scelta indicata per chi preferisce la regolarità del 4 tempi.",
+        features: [
+          "Motore Honda GX50 OHC a 4 tempi",
+          "Funzionamento a benzina: non richiede miscela",
+          "Utilizzabile inclinato a 360° in ogni posizione",
+          "Avviamento a strappo autoavvolgente",
+          "Asta rigida AMA da 28 mm",
+          "Assemblaggio e assistenza nella nostra officina",
+        ],
         specs: [
           { label: "Motore", value: "Honda 4 Tempi OHC" },
           { label: "Cilindrata", value: "47.9 cc" },
+          { label: "Potenza netta", value: "1,47 kW / 2,0 HP a 7.000 giri/min" },
+          { label: "Coppia max", value: "2,2 Nm a 5.000 giri/min" },
+          { label: "Serbatoio", value: "0,63 litri" },
           { label: "Asta", value: "AMA 28 mm" },
           { label: "Vantaggi", value: "Bassi consumi, no miscela" }
         ]
@@ -830,23 +890,54 @@ export const categories = [
     tagline: "Comfort e potenza di taglio",
     items: [
       {
-        title: "Snapper MJ102 — B&S 7220",
+        title: "Snapper RPX102 — B&S 7220",
         img: "https://www.centroverderovigo.com/wp-content/uploads/2025/01/snapper-trattorino-rpx102-tagliaerba-raccolta-ventrale-fdx1-000-768x596.jpg",
+        description:
+          "Trattorino rasaerba Snapper RPX102 con motore Briggs & Stratton 7220 EXi V-Twin, piatto a due lame da 102 cm e capiente cesto posteriore da 300 litri. La trasmissione idrostatica Tuff Torq K46 permette di variare la velocità in modo continuo senza cambiare marcia, rendendo più fluide le manovre attorno ad alberi e aiuole. Le sei altezze di taglio da 30 a 90 mm coprono dalla rifinitura ordinaria all'erba più sviluppata; l'innesto elettrico delle lame e il sedile con schienale medio completano una macchina pensata per prati ampi e sessioni di lavoro prolungate.",
+        features: [
+          "Motore bicilindrico Briggs & Stratton 7220 EXi V-Twin",
+          "Trasmissione idrostatica Tuff Torq K46",
+          "Piatto da 102 cm con due lame e quattro ruote antiscalpo",
+          "Innesto elettrico delle lame",
+          "Cesto posteriore da 300 litri",
+          "Attacco di traino e tappo mulching inclusi",
+          "Attacco rapido per il lavaggio del piatto",
+        ],
         specs: [
-          { label: "Motore", value: "Briggs & Stratton Intek 7220 V-Twin" },
+          { label: "Motore", value: "Briggs & Stratton 7220 EXi V-Twin" },
           { label: "Larghezza taglio", value: "102 cm (2 lame)" },
-          { label: "Trasmissione", value: "Idrostatica" },
-          { label: "Cesto raccolta", value: "300 litri" }
+          { label: "Altezza di taglio", value: "30 - 90 mm (6 posizioni)" },
+          { label: "Trasmissione", value: "Idrostatica Tuff Torq K46, 2WD" },
+          { label: "Velocità", value: "0 - 8 km/h AV, 0 - 5 km/h RM" },
+          { label: "Cesto raccolta", value: "300 litri" },
+          { label: "Serbatoio", value: "8 litri" },
+          { label: "Peso", value: "255 kg" }
         ]
       },
       {
         title: "Alpina AT4 84 — Stiga ST350",
         img: "https://hidrotecnoshop.it/wp-content/uploads/2022/10/4691a6726a931ba787ab53bcc3b52ca31a889b6e_AT484A_2T2000404A22_full01.jpg.jpg",
+        description:
+          "Trattorino Alpina AT4 84 A con motore monocilindrico STIGA ST 350 da 352 cm³ e 5,8 kW, adatto alla manutenzione di prati fino a circa 3.000 m². Il piatto da 84 cm con due lame raccoglie nel cesto posteriore da 200 litri, ma consente anche lo scarico posteriore e il taglio mulching. Il cambio meccanico a cinque marce avanti più retromarcia è semplice e robusto; l'altezza si regola in sette posizioni da 25 a 80 mm e le lame si inseriscono tramite frizione elettromagnetica premendo un pulsante.",
+        features: [
+          "Tre sistemi di taglio: raccolta, scarico posteriore e mulching",
+          "Piatto a due lame da 84 cm",
+          "Innesto elettromagnetico delle lame",
+          "Sette altezze di taglio selezionabili",
+          "Trazione posteriore e assale anteriore oscillante",
+          "Ruote antiscalpo, fari e paraurti anteriore",
+          "Kit mulching incluso",
+        ],
         specs: [
-          { label: "Motore", value: "Stiga ST 350 (352 cc)" },
-          { label: "Larghezza taglio", value: "84 cm" },
+          { label: "Motore", value: "STIGA ST 350 monocilindrico (352 cc)" },
+          { label: "Potenza", value: "5,8 kW a 2.400 giri/min" },
+          { label: "Superficie indicativa", value: "Fino a 3.000 m²" },
+          { label: "Larghezza taglio", value: "84 cm (2 lame)" },
+          { label: "Altezza di taglio", value: "25 - 80 mm (7 posizioni)" },
           { label: "Trasmissione", value: "Meccanica (5 AV + 1 RM)" },
-          { label: "Cesto raccolta", value: "200 litri" }
+          { label: "Cesto raccolta", value: "200 litri" },
+          { label: "Serbatoio", value: "6 litri" },
+          { label: "Peso", value: "175 kg" }
         ]
       },
     ],
@@ -1041,12 +1132,23 @@ export const categories = [
         ]
       },
       {
-        title: "Motosega da taglio lama 25\" — GGP Italia",
+        title: "Motosega da potatura GGP Italia — barra 25 cm",
         price: 450,
         img: "https://tradeshopitalia.com/60044-large_default/motosega-potatore-25cc-a-scoppio-benzina-lama-25-cm-per-potatura-professionale.jpg",
+        description:
+          "Motosega compatta da potatura GGP Italia con motore monocilindrico a 2 tempi da 25,4 cm³ e barra da 25 cm. La potenza di 0,9 kW / 1,2 HP è dimensionata per la manutenzione di alberi da frutto, ulivi, arbusti e per il taglio di rami di piccolo e medio diametro. La barra corta rende la macchina più agile tra i rami e facilita i tagli controllati; l'avviamento manuale e la lubrificazione automatica della catena mantengono l'impostazione semplice e pratica per i lavori periodici in giardino e campagna.",
+        features: [
+          "Formato compatto specifico per la potatura",
+          "Motore monocilindrico 2 tempi",
+          "Barra corta da 25 cm per tagli controllati",
+          "Avviamento manuale a strappo",
+          "Lubrificazione automatica della catena",
+          "Indicata per alberi da frutto, ulivi e manutenzione del verde",
+        ],
         specs: [
-          { label: "Cilindrata", value: "25.4 cc" },
-          { label: "Potenza", value: "1.2 HP" },
+          { label: "Motore", value: "2 tempi monocilindrico" },
+          { label: "Cilindrata", value: "25,4 cc" },
+          { label: "Potenza", value: "0,9 kW / 1,2 HP" },
           { label: "Lunghezza barra", value: "25 cm (10\")" },
           { label: "Utilizzo", value: "Potatura leggera" }
         ]
@@ -1107,24 +1209,49 @@ export const categories = [
       },
       {
         title: "Kawasaki TJ23V KA600D",
-        detail: "Monolama",
+        detail: "Bilama girevole 60 cm",
         img: "https://www.metautensili.it/12842-thickbox_default/kawasaki-tagliasiepe-ka600d-tj23v.jpg",
+        description:
+          "Tagliasiepi KA600D con motore Kawasaki TJ23V a 2 tempi da 22,5 cm³ e lama bilaterale da 60 cm. I denti con passo da 35 mm e le lame in acciaio cromato sono adatti alla rifinitura di siepi ornamentali e alla potatura di vegetazione consistente. L'impugnatura girevole permette di mantenere polsi e braccia in una posizione più naturale nei tagli verticali e orizzontali. Il motore eroga 0,63 kW / 0,84 HP e adotta carburatore a membrana, accensione elettronica e avviamento facilitato Kawasaki KAR.",
+        features: [
+          "Motore Kawasaki TJ23V a 2 tempi",
+          "Lama bilaterale in acciaio cromato",
+          "Impugnatura girevole per tagli verticali e orizzontali",
+          "Avviamento facilitato Kawasaki KAR",
+          "Carburatore a membrana e accensione elettronica",
+          "Configurazione equilibrata per uso regolare e professionale",
+        ],
         specs: [
           { label: "Motore", value: "Kawasaki TJ23V (22.5 cc)" },
+          { label: "Potenza", value: "0,63 kW / 0,84 HP a 8.000 giri/min" },
           { label: "Lunghezza lama", value: "60 cm" },
-          { label: "Configurazione", value: "Monolama" },
-          { label: "Impugnatura", value: "Fissa" }
+          { label: "Configurazione", value: "Bilama, passo denti 35 mm" },
+          { label: "Impugnatura", value: "Girevole" },
+          { label: "Serbatoio", value: "0,4 litri" },
+          { label: "Peso", value: "5,0 kg" }
         ]
       },
       {
         title: "Kawasaki TJ23V KA750S",
-        detail: "Bilama girevole 75cm",
-        img: "https://www.agricolbio.it/shop/5950-large_default/tagliasiepi-a-scoppio-2-tempi-mod-mhd-750-tk-lama-75-cm-girevole-con-motore-kawasaki-serie-maori-professional-tosasiepi.jpg",
+        detail: "Monolama 75 cm",
+        img: null,
+        description:
+          "Tagliasiepi KA750S con lunga lama singola da 75 cm e motore Kawasaki TJ23V da 22,5 cm³. La configurazione monolama favorisce passate ampie e lineari sulle superfici estese, risultando particolarmente pratica per pareggiare il fianco e la sommità di siepi lunghe. Il TJ23V sviluppa 0,63 kW / 0,84 HP ed è un 2 tempi compatto con carburatore a membrana, accensione elettronica e sistema di avviamento Kawasaki KAR, progettato per offrire regolarità e contenere l'affaticamento nel lavoro continuativo.",
+        features: [
+          "Motore Kawasaki TJ23V a 2 tempi",
+          "Lama singola da 75 cm per passate lunghe e uniformi",
+          "Lame in acciaio cromato",
+          "Avviamento facilitato Kawasaki KAR",
+          "Carburatore a membrana e accensione elettronica",
+          "Indicato per siepi lunghe e superfici estese",
+        ],
         specs: [
           { label: "Motore", value: "Kawasaki TJ23V (22.5 cc)" },
+          { label: "Potenza", value: "0,63 kW / 0,84 HP a 8.000 giri/min" },
           { label: "Lunghezza lama", value: "75 cm" },
-          { label: "Configurazione", value: "Bilama" },
-          { label: "Impugnatura", value: "Girevole a 180°" }
+          { label: "Configurazione", value: "Monolama" },
+          { label: "Impugnatura", value: "Fissa" },
+          { label: "Serbatoio", value: "0,4 litri" }
         ]
       },
     ],
@@ -1157,13 +1284,26 @@ export const categories = [
         ]
       },
       {
-        title: "Maruyama GK300",
+        title: "Maruyama GK300B",
         img: "https://www.metautensili.it/12856-large_default/maruyama-soffiatore-gk300b.jpg",
+        description:
+          "Soffiatore portatile professionale Maruyama GK300B con motore a 2 tempi da 30,1 cm³ e 1 kW / 1,36 HP. Muove fino a 13 m³ d'aria al minuto e raggiunge una velocità massima di 72,1 m/s, sufficiente per liberare rapidamente vialetti, cortili e aree verdi da foglie, erba tagliata e piccoli residui. Il peso di 4,3 kg e la configurazione manuale bilanciata lo rendono agile negli spostamenti; la costruzione Maruyama privilegia durata e continuità di rendimento per l'impiego frequente.",
+        features: [
+          "Motore Maruyama 2 tempi da 30,1 cm³",
+          "Elevata portata d'aria in un corpo portatile",
+          "Comando dell'acceleratore regolabile",
+          "Design bilanciato per facilitare il lavoro continuativo",
+          "Costruzione destinata all'uso professionale",
+          "Adatto a foglie, erba tagliata e pulizia di vialetti",
+        ],
         specs: [
-          { label: "Cilindrata", value: "30.1 cc" },
+          { label: "Motore", value: "Maruyama 2 tempi" },
+          { label: "Cilindrata", value: "30,1 cc" },
+          { label: "Potenza max", value: "1,0 kW / 1,36 HP" },
           { label: "Portata aria", value: "13 m³/min" },
+          { label: "Velocità aria", value: "72,1 m/s" },
           { label: "Utilizzo", value: "Professionale" },
-          { label: "Peso", value: "4.3 kg" }
+          { label: "Peso", value: "4,3 kg" }
         ]
       },
     ],

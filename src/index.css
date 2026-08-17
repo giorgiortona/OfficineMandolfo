@@ -1137,10 +1137,15 @@ a.stat:hover {
   scale: 1.06;
 }
 
-.product-thumb .noimg {
-  color: #8a938c;
-  font-size: 0.8rem;
-  font-family: var(--font-mono);
+.product-placeholder-tractor {
+  width: 112px;
+  max-width: 48%;
+  color: #1ca50d;
+  transition: transform 0.4s ease;
+}
+
+.product:hover .product-placeholder-tractor {
+  transform: scale(1.06);
 }
 
 .product-body {
@@ -1632,6 +1637,17 @@ footer {
   background: #f2f4f2;
   border-radius: 8px;
   padding: 10px;
+}
+
+.modal-img-placeholder {
+  display: grid;
+  place-items: center;
+}
+
+.modal-placeholder-tractor {
+  width: 88px;
+  max-width: 100%;
+  color: #1ca50d;
 }
 
 .modal-title-area {

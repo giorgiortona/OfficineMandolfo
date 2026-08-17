@@ -1,5 +1,31 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { formatPrice } from "../data/catalog.js";
+import TractorLogo from "./TractorLogo.jsx";
+
+function ModalProductImage({ product }) {
+  const [broken, setBroken] = useState(false);
+
+  if (!product.img || broken) {
+    return (
+      <div
+        className="modal-img modal-img-placeholder"
+        role="img"
+        aria-label={`Immagine segnaposto per ${product.title}`}
+      >
+        <TractorLogo className="modal-placeholder-tractor" />
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={product.img}
+      alt={product.title}
+      className="modal-img"
+      onError={() => setBroken(true)}
+    />
+  );
+}
 
 export default function ProductModal({ product, onClose }) {
   useEffect(() => {
@@ -31,11 +57,7 @@ export default function ProductModal({ product, onClose }) {
         {product && (
           <>
             <div className="modal-header">
-              {product.img ? (
-                <img src={product.img} alt={product.title} className="modal-img" />
-              ) : (
-                <div className="modal-img" style={{ display: 'grid', placeItems: 'center', color: '#8a938c', fontSize: '0.8rem', fontFamily: 'var(--font-mono)' }}>foto in arrivo</div>
-              )}
+              <ModalProductImage key={product.title} product={product} />
               <div className="modal-title-area">
                 <span className="modal-cat">{product.category}</span>
                 <h3 className="modal-title">{product.title}</h3>
