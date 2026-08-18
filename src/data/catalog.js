@@ -1,4 +1,4 @@
-// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 55 articoli, 13 categorie.
+// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 56 articoli, 13 categorie.
 // I prezzi mancanti sono "su preventivo". Le immagini puntano ai siti di rivenditori/produttori.
 
 export const categories = [
@@ -143,9 +143,34 @@ export const categories = [
         ]
       },
       {
+        title: "Motozappa Lombardini 14 CV",
+        detail: "Motozappa con motore Lombardini da 14 CV",
+        price: 3200,
+        img: "/images/motozappa-lombardini-14cv-1.png",
+        images: [
+          "/images/motozappa-lombardini-14cv-1.png",
+          "/images/motozappa-lombardini-14cv-2.png",
+          "/images/motozappa-lombardini-14cv-3.png",
+        ],
+        description:
+          "Motozappa equipaggiata con motore Lombardini da 14 CV, proposta completa di ruote e stegole di guida. Per informazioni sull'allestimento, sugli accessori disponibili e sulle condizioni di vendita, contatta direttamente l'officina.",
+        features: [
+          "Motore Lombardini da 14 CV",
+          "Configurazione completa su ruote",
+          "Stegole di guida con comandi a portata di mano",
+          "Assistenza e ricambi disponibili in officina",
+        ],
+        specs: [
+          { label: "Motore", value: "Lombardini" },
+          { label: "Potenza dichiarata", value: "14 CV" },
+          { label: "Configurazione", value: "Motozappa su ruote" }
+        ]
+      },
+      {
         title: "Pasbo G94 Diesel",
         detail: "Loncin diesel 10cv, 3 marce, avviamento elettrico",
         img: "/images/motozappa_orange.png",
+        price: 2900,
         description:
           "La Pasbo G94 è il modello di punta della casa salentina: cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio e frizione conica, fresa a 6 elementi per lato con dischi che porta la larghezza di lavoro a 105-115 cm. Qui è motorizzata con il Loncin diesel da 10 CV con avviamento elettrico a batteria: gasolio significa consumi più bassi e meno calore nelle giornate lunghe, e la chiave significa non dover più tirare la fune con un motore freddo. È la macchina per chi ha terreno vero da lavorare, non l'orto dietro casa.",
         features: [
