@@ -104,7 +104,7 @@ function ProductGallery({ product }) {
 }
 
 export default function ProductModal({ product, onClose }) {
-  const hasGallery = product?.images?.length > 1;
+  const hasGallery = Boolean(product);
 
   useEffect(() => {
     if (product) {
@@ -145,7 +145,18 @@ export default function ProductModal({ product, onClose }) {
               </div>
             </div>
             <div className="modal-body">
-              {product.detail && <p>{product.detail}</p>}
+              {product.detail && (
+                <p>
+                  {product.detailHighlight ? (
+                    <>
+                      <strong>{product.detailHighlight}</strong>
+                      {product.detail.slice(product.detailHighlight.length)}
+                    </>
+                  ) : (
+                    product.detail
+                  )}
+                </p>
+              )}
 
               {product.description && (
                 <div className="modal-section">
@@ -161,7 +172,9 @@ export default function ProductModal({ product, onClose }) {
                     {product.specs.map((spec, i) => (
                       <li key={i}>
                         <span className="spec-label">{spec.label}</span>
-                        <span className="spec-value">{spec.value}</span>
+                        <span className="spec-value">
+                          {spec.emphasis ? <strong>{spec.value}</strong> : spec.value}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -175,7 +188,9 @@ export default function ProductModal({ product, onClose }) {
                   <h4 className="modal-section-title">Dotazione e caratteristiche</h4>
                   <ul className="features-list">
                     {product.features.map((f, i) => (
-                      <li key={i}>{f}</li>
+                      <li key={i}>
+                        {product.highlightedFeatures?.includes(f) ? <strong>{f}</strong> : f}
+                      </li>
                     ))}
                   </ul>
                 </div>

@@ -223,7 +223,18 @@ export default function Catalog() {
               <div className="product-body">
                 <span className="product-cat">{item.category}</span>
                 <h3 className="product-title">{item.title}</h3>
-                {item.detail && <p className="product-detail">{item.detail}</p>}
+                {item.detail && (
+                  <p className="product-detail">
+                    {item.detailHighlight ? (
+                      <>
+                        <strong>{item.detailHighlight}</strong>
+                        {item.detail.slice(item.detailHighlight.length)}
+                      </>
+                    ) : (
+                      item.detail
+                    )}
+                  </p>
+                )}
                 <div className="product-price">
                   <span className={`net ${item.price == null ? "quote" : ""}`}>
                     {formatPrice(item.price)}

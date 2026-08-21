@@ -1649,11 +1649,11 @@ footer {
   position: relative;
 }
 
-.modal-gallery.multiple {
+.modal-gallery {
   width: 100%;
 }
 
-.modal-gallery.multiple .modal-gallery-stage {
+.modal-gallery .modal-gallery-stage {
   height: 390px;
   overflow: hidden;
   border-radius: 12px;
@@ -1665,7 +1665,7 @@ footer {
   box-shadow: 0 0 0 3px rgba(28, 165, 13, 0.35);
 }
 
-.modal-gallery.multiple .modal-img {
+.modal-gallery .modal-img {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -1908,7 +1908,7 @@ footer {
     width: 100%;
     flex-basis: auto;
   }
-  .modal-gallery.multiple .modal-gallery-stage {
+  .modal-gallery .modal-gallery-stage {
     height: min(52svh, 390px);
   }
   .modal-img {

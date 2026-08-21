@@ -1,4 +1,4 @@
-// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 56 articoli, 13 categorie.
+// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 62 articoli, 15 categorie.
 // I prezzi mancanti sono "su preventivo". Le immagini puntano ai siti di rivenditori/produttori.
 
 export const categories = [
@@ -143,9 +143,9 @@ export const categories = [
         ]
       },
       {
-        title: "Motozappa Lombardini 14 CV",
-        detail: "Motozappa con motore Lombardini da 14 CV",
-        price: 3200,
+        title: "Motozappa G94 Lombardini",
+        detail: "Motozappa GP94, 3 marce con motore Lombardini 14 cavalli",
+        price: 2900,
         img: "/images/motozappa-lombardini-14cv-1.png",
         images: [
           "/images/motozappa-lombardini-14cv-1.png",
@@ -153,9 +153,10 @@ export const categories = [
           "/images/motozappa-lombardini-14cv-3.png",
         ],
         description:
-          "Motozappa equipaggiata con motore Lombardini da 14 CV, proposta completa di ruote e stegole di guida. Per informazioni sull'allestimento, sugli accessori disponibili e sulle condizioni di vendita, contatta direttamente l'officina.",
+          "Motozappa GP94, 3 marce con motore Lombardini 14 cavalli",
         features: [
           "Motore Lombardini da 14 CV",
+          "Cambio a 3 marce",
           "Configurazione completa su ruote",
           "Stegole di guida con comandi a portata di mano",
           "Assistenza e ricambi disponibili in officina",
@@ -163,31 +164,109 @@ export const categories = [
         specs: [
           { label: "Motore", value: "Lombardini" },
           { label: "Potenza dichiarata", value: "14 CV" },
+          { label: "Cambio", value: "3 marce" },
           { label: "Configurazione", value: "Motozappa su ruote" }
         ]
       },
       {
-        title: "Pasbo G94 Diesel",
-        detail: "Loncin diesel 10cv, 3 marce, avviamento elettrico",
-        img: "/images/motozappa_orange.png",
-        price: 2900,
+        title: "Motozappa cambio DS84 10cv e motore Lombardini",
+        detail: "Motore Lombardini 15LD440, 3 marce, diesel",
+        price: 2800,
+        img: "/images/motozappa-ds84-lombardini-1.png",
+        images: [
+          "/images/motozappa-ds84-lombardini-1.png",
+          "/images/motozappa-ds84-lombardini-2.png",
+          "/images/motozappa-ds84-lombardini-3.png",
+          "/images/motozappa-ds84-lombardini-4.png",
+          "/images/motozappa-ds84-lombardini-5.png",
+        ],
         description:
-          "La Pasbo G94 è il modello di punta della casa salentina: cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio e frizione conica, fresa a 6 elementi per lato con dischi che porta la larghezza di lavoro a 105-115 cm. Qui è motorizzata con il Loncin diesel da 10 CV con avviamento elettrico a batteria: gasolio significa consumi più bassi e meno calore nelle giornate lunghe, e la chiave significa non dover più tirare la fune con un motore freddo. È la macchina per chi ha terreno vero da lavorare, non l'orto dietro casa.",
+          "motore Lombardini 15LD440, asso 30, 3 marce, diesel. Venduta con zappetta, possibile aggiunta di rulli",
         features: [
-          "Cambio Pasbo a 3 marce avanti più retromarcia",
-          "Trasmissione a ingranaggi in bagno d'olio",
-          "Frizione conica",
-          "Fresa a 6 elementi per lato più dischi (ø 360-420 mm)",
-          "Avviamento elettrico con batteria",
-          "Motore diesel: consumi ridotti nel lavoro prolungato",
+          "Motore Lombardini 15LD440",
+          "Cambio a 3 marce",
+          "Alimentazione diesel",
+          "Venduta con zappetta",
+          "Possibile aggiunta di rulli",
         ],
         specs: [
-          { label: "Motore", value: "Loncin Diesel 10 CV" },
-          { label: "Avviamento", value: "Elettrico (con batteria)" },
-          { label: "Cambio", value: "3 Marce AV + 1 RM" },
-          { label: "Trasmissione", value: "Ingranaggi in bagno d'olio" },
-          { label: "Frizione", value: "Conica" },
-          { label: "Fresa", value: "105 - 115 cm con dischi" }
+          { label: "Motore", value: "Lombardini 15LD440" },
+          { label: "Potenza dichiarata", value: "10 CV" },
+          { label: "Asso", value: "30" },
+          { label: "Cambio", value: "3 marce" },
+          { label: "Alimentazione", value: "Diesel" }
+        ]
+      },
+      {
+        title: "Motozappa cambio G14 Avviamento Elettrico Lombardini 14cv",
+        detail: "Motore Lombardini 14cv, avviamento elettrico e cambio G14",
+        price: 3400,
+        img: "/images/motozappa-g14-lombardini-1.png",
+        images: [
+          "/images/motozappa-g14-lombardini-1.png",
+          "/images/motozappa-g14-lombardini-2.png",
+          "/images/motozappa-g14-lombardini-3.png",
+          "/images/motozappa-g14-lombardini-4.png",
+          "/images/motozappa-g14-lombardini-5.png",
+          "/images/motozappa-g14-lombardini-6.png",
+          "/images/motozappa-g14-lombardini-7.png",
+        ],
+        description:
+          "Motore Lombardini 14cv, zappette con quarta stella, diesel, 3 marce più retromarcia.",
+        features: [
+          "Motore Lombardini da 14 CV",
+          "Avviamento elettrico",
+          "Cambio G14 con 3 marce più retromarcia",
+          "Alimentazione diesel",
+          "Zappette con quarta stella",
+        ],
+        specs: [
+          { label: "Motore", value: "Lombardini" },
+          { label: "Potenza dichiarata", value: "14 CV" },
+          { label: "Avviamento", value: "Elettrico" },
+          { label: "Cambio", value: "3 marce + retromarcia" },
+          { label: "Alimentazione", value: "Diesel" },
+          { label: "Zappette", value: "Con quarta stella" }
+        ]
+      },
+    ],
+  },
+  {
+    id: "motocoltivatori-zappette",
+    label: "Motocoltivatori a zappette",
+    tagline: "Trazione e fresatura professionale",
+    items: [
+      {
+        title: "Motocoltivatore Goldoni a zappette",
+        detail: "Cambio Goldoni 4 AV + 3 RM • Motore 15LD440 da 10 CV diesel",
+        img: "/images/motocoltivatore-goldoni-15ld440-1.jpg",
+        images: [
+          "/images/motocoltivatore-goldoni-15ld440-1.jpg",
+          "/images/motocoltivatore-goldoni-15ld440-2.jpg",
+          "/images/motocoltivatore-goldoni-15ld440-3.jpg",
+          "/images/motocoltivatore-goldoni-15ld440-4.jpg",
+          "/images/motocoltivatore-goldoni-15ld440-5.jpg",
+        ],
+        description:
+          "Motocoltivatore Goldoni a zappette equipaggiato con motore 15LD440 da 10 CV diesel e cambio Goldoni con 4 marce avanti e 3 retromarce. La configurazione con ruote agricole e fresa posteriore offre trazione, controllo e versatilità nelle lavorazioni del terreno, dagli orti agli impieghi agricoli più impegnativi.",
+        features: [
+          "Motore 15LD440 da 10 CV diesel",
+          "Cambio Goldoni con 4 marce avanti",
+          "3 retromarce",
+          "Gruppo zappette posteriore",
+          "Ruote agricole tassellate",
+          "Carter di protezione della fresa",
+          "Comandi raccolti sul manubrio",
+        ],
+        specs: [
+          { label: "Marca", value: "Goldoni" },
+          { label: "Motore", value: "15LD440 diesel" },
+          { label: "Potenza motore", value: "10 CV" },
+          { label: "Cambio", value: "Goldoni" },
+          { label: "Marce avanti", value: "4" },
+          { label: "Retromarce", value: "3" },
+          { label: "Attrezzatura", value: "Zappette posteriori" },
+          { label: "Ruote", value: "Agricole tassellate" }
         ]
       },
     ],
@@ -660,26 +739,92 @@ export const categories = [
     items: [
       {
         title: "Spaccalegna 10 tonnellate",
-        detail: "Idraulico orizzontale con motore a benzina",
-        img: "/images/spaccalegna-10t-1.jpg",
+        detail: "Motore Honda GX 160 a benzina e pompa italiana",
+        img: "/images/spaccalegna-10t-honda-gx160-1.jpg",
         images: [
-          "/images/spaccalegna-10t-1.jpg",
-          "/images/spaccalegna-10t-2.jpg",
-          "/images/spaccalegna-10t-3.jpg",
+          "/images/spaccalegna-10t-honda-gx160-1.jpg",
+          "/images/spaccalegna-10t-honda-gx160-2.jpg",
+          "/images/spaccalegna-10t-honda-gx160-3.jpg",
+          "/images/spaccalegna-10t-honda-gx160-4.jpg",
         ],
         description:
-          "Spaccalegna idraulico orizzontale con forza di spinta da 10 tonnellate, motore a benzina e ruote per agevolarne lo spostamento. Disponibile su preventivo.",
+          "Spaccalegna con forza di spinta da 10 tonnellate, equipaggiato con motore Honda GX 160 a benzina e pompa italiana. L'accetta è sottoposta a trattamento termico, mentre il gancio traino e le ruote con cuscinetti ne agevolano lo spostamento.",
         features: [
           "Forza di spinta da 10 tonnellate",
-          "Funzionamento idraulico",
-          "Motore a benzina",
-          "Struttura orizzontale su ruote",
+          "Motore Honda GX 160 a benzina",
+          "Pompa italiana",
+          "Accetta con trattamento termico",
+          "Ruote con cuscinetti",
+          "Gancio traino",
         ],
         specs: [
           { label: "Forza di spinta", value: "10 tonnellate" },
-          { label: "Azionamento", value: "Motore a benzina" },
+          { label: "Motore", value: "Honda GX 160 a benzina" },
+          { label: "Pompa", value: "Italiana" },
+          { label: "Accetta", value: "Con trattamento termico" },
+          { label: "Ruote", value: "Con cuscinetti" },
+          { label: "Traino", value: "Gancio traino" }
+        ]
+      },
+      {
+        title: "Spaccalegna 15 tonnellate professionale",
+        detail: "Motore Lombardini LGA 340 a benzina e pompa italiana",
+        img: "/images/spaccalegna-15t-professionale-1.jpg",
+        images: [
+          "/images/spaccalegna-15t-professionale-1.jpg",
+          "/images/spaccalegna-15t-professionale-2.jpg",
+          "/images/spaccalegna-15t-professionale-3.jpg",
+          "/images/spaccalegna-15t-professionale-4.jpg",
+          "/images/spaccalegna-15t-professionale-5.jpg",
+        ],
+        description:
+          "Spaccalegna professionale con forza di spinta da 15 tonnellate, equipaggiato con motore Lombardini LGA 340 a benzina e pompa italiana. Il gancio traino e le ruote con cuscinetti ne agevolano lo spostamento.",
+        features: [
+          "Forza di spinta da 15 tonnellate",
+          "Motore Lombardini LGA 340 a benzina",
+          "Pompa italiana",
+          "Gancio traino",
+          "Ruote con cuscinetti",
+        ],
+        specs: [
+          { label: "Forza di spinta", value: "15 tonnellate" },
+          { label: "Motore", value: "Lombardini LGA 340 a benzina" },
+          { label: "Pompa", value: "Italiana" },
+          { label: "Traino", value: "Gancio traino" },
+          { label: "Ruote", value: "Con cuscinetti" }
+        ]
+      },
+      {
+        title: "Spaccalegna 15 tonnellate Loncin",
+        detail: "Motore Loncin 10 CV a benzina • Prova con comando dimostrativo",
+        img: "/images/spaccalegna-15t-loncin-10cv-1.jpg",
+        images: [
+          "/images/spaccalegna-15t-loncin-10cv-1.jpg",
+          "/images/spaccalegna-15t-loncin-10cv-2.jpg",
+          "/images/spaccalegna-15t-loncin-10cv-3.jpg",
+          "/images/spaccalegna-15t-loncin-10cv-4.jpg",
+          "/images/spaccalegna-15t-loncin-10cv-5.jpg",
+          "/images/spaccalegna-15t-loncin-10cv-6.jpg",
+        ],
+        description:
+          "Spaccalegna orizzontale con forza di spinta da 15 tonnellate, equipaggiato con motore Loncin da 10 CV a benzina. La struttura su ruote tassellate facilita gli spostamenti, mentre il gruppo idraulico con comando a leva permette di gestire l'avanzamento del cuneo. Il modello è disponibile per una prova con comando dimostrativo.",
+        features: [
+          "Forza di spinta da 15 tonnellate",
+          "Motore Loncin da 10 CV a benzina",
+          "Prova con comando dimostrativo",
+          "Comando idraulico a leva",
+          "Configurazione orizzontale",
+          "Ruote tassellate per lo spostamento",
+          "Piedi di appoggio stabilizzatori",
+        ],
+        specs: [
+          { label: "Forza di spinta", value: "15 tonnellate" },
+          { label: "Motore", value: "Loncin a benzina" },
+          { label: "Potenza motore", value: "10 CV" },
           { label: "Configurazione", value: "Orizzontale" },
-          { label: "Trasporto", value: "Ruote pneumatiche" }
+          { label: "Comando", value: "Idraulico a leva" },
+          { label: "Dimostrazione", value: "Prova con comando dimostrativo" },
+          { label: "Mobilità", value: "Ruote tassellate" }
         ]
       },
     ],
@@ -943,7 +1088,13 @@ export const categories = [
       {
         title: "Cub Cadet XT2 PS107",
         detail: "Kawasaki V-Twin 603 cc, piatto bilama da 107 cm",
-        img: "/images/cub-cadet-xt2-ps107.jpg",
+        img: "/images/cub-cadet-xt2-ps107-1.jpg",
+        images: [
+          "/images/cub-cadet-xt2-ps107-1.jpg",
+          "/images/cub-cadet-xt2-ps107-2.jpg",
+          "/images/cub-cadet-xt2-ps107-3.jpg",
+          "/images/cub-cadet-xt2-ps107-4.jpg",
+        ],
         description:
           "Trattorino rasaerba Cub Cadet XT2 PS107 della serie Enduro, progettato per tagliare rapidamente prati ampi e muoversi con precisione anche attorno ad alberi e aiuole. Il motore Kawasaki V-Twin da 603 cm³ eroga 9,8 kW a 2.300 giri/min, mentre la trasmissione idrostatica a pedale consente di regolare in modo continuo avanzamento e retromarcia senza cambiare marcia. Il piatto stampato da 107 cm utilizza due lame, scarico laterale e innesto elettromagnetico; altezza regolabile in 12 posizioni da 25 a 100 mm, kit mulching e lame mulching di serie. Il sistema Tight Turn xTreme riduce il raggio di sterzata a soli 17 cm. Telaio saldato, assale anteriore in ghisa, fari LED, cruise control e sedile alto regolabile completano una macchina robusta e confortevole, con cesto da 200 litri disponibile come accessorio.",
         features: [
@@ -1395,6 +1546,88 @@ export const categories = [
           { label: "Velocità aria", value: "72,1 m/s" },
           { label: "Utilizzo", value: "Professionale" },
           { label: "Peso", value: "4,3 kg" }
+        ]
+      },
+    ],
+  },
+  {
+    id: "gruppo-elettrogeno",
+    label: "Gruppo Elettrogeno",
+    tagline: "Energia professionale e di emergenza",
+    items: [
+      {
+        title: "Pramac GBW45Y",
+        detail: "Gruppo elettrogeno diesel trifase da 45,33 kVA",
+        img: "/images/pramac-gbw45y-1.jpg",
+        images: [
+          "/images/pramac-gbw45y-1.jpg",
+          "/images/pramac-gbw45y-2.jpg",
+          "/images/pramac-gbw45y-3.jpg",
+          "/images/pramac-gbw45y-4.jpg",
+        ],
+        description:
+          "Pramac GBW45Y è un gruppo elettrogeno diesel trifase cofanato per l'alimentazione professionale e di emergenza. Eroga 43,03 kVA / 34,42 kW in servizio continuo PRP e raggiunge 45,33 kVA / 36,26 kW in emergenza ESP, con uscita a 400 V e 50 Hz. Il motore Yanmar 4TNV98T-GPGEC è raffreddato ad acqua e abbinato a un alternatore Mecc Alte. La cofanatura compatta integra il serbatoio, il punto centrale di sollevamento e il silenziatore di scarico con protezione antipioggia. Il quadro manuale dell'allestimento fotografato offre cinque prese industriali, voltmetro, amperometro, contaore, protezioni elettriche, controllo del motore e pulsante di arresto di emergenza.",
+        features: [
+          "Potenza di emergenza ESP: 45,33 kVA / 36,26 kW",
+          "Potenza in servizio continuo PRP: 43,03 kVA / 34,42 kW",
+          "Motore diesel Yanmar 4TNV98T-GPGEC raffreddato ad acqua",
+          "Alternatore Mecc Alte",
+          "Cofanatura compatta con serbatoio integrato e punto di sollevamento centrale",
+          "Quadro manuale con cinque prese industriali, strumenti analogici e contaore",
+          "Protezioni elettriche, protezione motore e arresto di emergenza",
+        ],
+        specs: [
+          { label: "Marca", value: "Pramac" },
+          { label: "Modello", value: "GBW45Y" },
+          { label: "Alimentazione", value: "Diesel" },
+          { label: "Tensione", value: "400 V" },
+          { label: "Frequenza", value: "50 Hz" },
+          { label: "Fasi", value: "3" },
+          { label: "Fattore di potenza", value: "cos φ 0,8" },
+          { label: "Potenza emergenza ESP", value: "45,33 kVA / 36,26 kW" },
+          { label: "Potenza servizio continuo PRP", value: "43,03 kVA / 34,42 kW" },
+          { label: "Motore", value: "Yanmar 4TNV98T-GPGEC" },
+          { label: "Raffreddamento", value: "Ad acqua" },
+          { label: "Livello emissioni", value: "Stage II" },
+          { label: "Alternatore", value: "Mecc Alte" },
+          { label: "Configurazione", value: "Cofanata" },
+          { label: "Potenza sonora indicata", value: "LWA 95 dB(A)" }
+        ]
+      },
+      {
+        title: "Gruppo elettrogeno 6 kW monofase",
+        detail: "Alternatore italiano • Motore Lombardini LGA 280",
+        detailHighlight: "Alternatore italiano",
+        img: "/images/gruppo-elettrogeno-6kw-lga280-1.jpg",
+        images: [
+          "/images/gruppo-elettrogeno-6kw-lga280-1.jpg",
+          "/images/gruppo-elettrogeno-6kw-lga280-2.jpg",
+          "/images/gruppo-elettrogeno-6kw-lga280-3.jpg",
+          "/images/gruppo-elettrogeno-6kw-lga280-4.jpg",
+          "/images/gruppo-elettrogeno-6kw-lga280-5.jpg",
+          "/images/gruppo-elettrogeno-6kw-lga280-6.jpg",
+        ],
+        description:
+          "Gruppo elettrogeno monofase da 6 kW equipaggiato con motore Lombardini LGA 280 e alternatore italiano Sincro. L'allestimento aperto è montato su un robusto telaio zincato che protegge motore e alternatore durante il trasporto e l'impiego. Il pannello di uscita dispone di presa industriale monofase, presa di servizio e contaore, per tenere sotto controllo il tempo di utilizzo e programmare la manutenzione.",
+        highlightedFeatures: ["Alternatore italiano Sincro"],
+        features: [
+          "Alternatore italiano Sincro",
+          "Potenza dichiarata di 6 kW",
+          "Erogazione monofase",
+          "Motore Lombardini LGA 280",
+          "Telaio aperto zincato di protezione",
+          "Presa industriale monofase e presa di servizio",
+          "Contaore integrato",
+        ],
+        specs: [
+          { label: "Potenza dichiarata", value: "6 kW" },
+          { label: "Fasi", value: "Monofase" },
+          { label: "Tensione", value: "230 V" },
+          { label: "Motore", value: "Lombardini LGA 280" },
+          { label: "Alternatore", value: "Italiano Sincro", emphasis: true },
+          { label: "Avviamento", value: "Manuale a strappo" },
+          { label: "Configurazione", value: "Aperta su telaio zincato" },
+          { label: "Strumentazione", value: "Contaore" }
         ]
       },
     ],
