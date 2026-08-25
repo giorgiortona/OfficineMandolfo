@@ -8,11 +8,11 @@ export const categories = [
     tagline: "Assemblate su richiesta",
     items: [
       {
-        title: "Obistica GK2 / GK90HS",
+        title: "Motozappa Hobbistica GK2 / GK90HS",
         detail: "Con motore Honda o motore Total",
         img: null,
         description:
-          "Motozappa da 90 cm di fresa che assembliamo noi in officina, scegliendo la motorizzazione insieme a te: il 4 tempi Honda se cerchi affidabilità a lungo termine e vuoi il ricambio garantito ovunque, il Total se conta di più il prezzo e la macchina lavora poche settimane l'anno. Il telaio è lo stesso, cambia il motore e cambia la spesa. Una marcia avanti più retromarcia, trasmissione a catena e cinghia: schema semplice, poche cose che si rompono e riparabili in giornata. Passa in officina e vediamo insieme che terreno devi lavorare.",
+          "Motozappa con fresa da 90 cm che assembliamo noi in officina, scegliendo la motorizzazione insieme a te: il 4 tempi Honda se cerchi affidabilità a lungo termine e vuoi il ricambio garantito ovunque, il Total se conta di più il prezzo e la macchina lavora poche settimane l'anno. Il telaio è lo stesso, cambia il motore e cambia la spesa. Una marcia avanti più retromarcia, trasmissione a catena e cinghia: schema semplice, poche cose che si rompono e riparabili in giornata. Passa in officina e vediamo insieme che terreno devi lavorare.",
         features: [
           "Assemblata in officina con la motorizzazione che scegli",
           "Motore Honda 4 tempi oppure Total, a parità di telaio",
@@ -31,7 +31,7 @@ export const categories = [
         title: "Bertolini 155 (Emak)",
         detail: "Motozappa compatta per orto e giardino",
         price: 369,
-        img: "https://www.faddagianni.it/8791-large_default/motozappa-bertolini-155.jpg",
+        img: "/images/catalog/catalog-42fde547402ba388.jpg",
         description:
           "Motozappa Bertolini 155 con motore a benzina Emak K 300 H OHV da 80 cm³ e 2,4 HP, avviamento autoavvolgente. È la macchina pensata per chi deve preparare l'orto e le aiuole prima della semina: leggera (27 kg), maneggevole e semplice da usare. La fresa da 46 cm è riducibile a 32 e 22 cm togliendo gli elementi laterali (tre per lato), così da lavorare anche fra le file già seminate. Trasmissione a catena con frizione a cinghia e tenditore, stegole regolabili verticalmente su tre posizioni e ruotino di trasferimento posteriore per spostarla senza fatica.",
         features: [
@@ -56,7 +56,7 @@ export const categories = [
       {
         title: "Diesse DS83 — Loncin 196cc",
         detail: "Cambio Diesse, motore orizzontale Loncin G200F",
-        img: "https://diesseagri.it/wp-content/uploads/2025/05/115-600x810.jpg",
+        img: "/images/catalog/catalog-3155e48dadd672bc.jpg",
         description:
           "Motozappa Diesse DS 83 EN con motore a benzina Loncin G200F da 5,6 HP / 4,1 kW e avviamento a strappo con autoavvolgente. Frizione conica a bagno d'olio e cambio a 2 velocità più una retromarcia ad ingranaggi in bagno d'olio. Completa di presa di forza, stegola di guida registrabile e dispositivo di sicurezza antinfortunistico. Fresa a 6 elementi più dischi da 95 cm, con larghezza di lavoro regolabile da 70 a 120 cm.",
         features: [
@@ -81,7 +81,7 @@ export const categories = [
       {
         title: "Diesse DS11 — Loncin 6.5cv",
         detail: "1 marcia avanti + retromarcia, motore Loncin G200",
-        img: "https://diesseagri.it/wp-content/uploads/2025/05/115-600x810.jpg",
+        img: "/images/catalog/catalog-3155e48dadd672bc.jpg",
         description:
           "Motozappa Diesse DS 11 EN con motore a benzina Loncin G200F da 5,6 HP / 4,1 kW e avviamento a strappo con autoavvolgente. Frizione conica a bagno d'olio e cambio a 2 velocità (1 marcia avanti più 1 retromarcia) con ingranaggi in bagno d'olio. Stegola di guida registrabile e dispositivo di sicurezza antinfortunistico. Fresa a 6 elementi più dischi.",
         features: [
@@ -122,7 +122,7 @@ export const categories = [
       {
         title: "Diesse 2 marce + retro — Loncin 6,5 CV",
         detail: "Motore Loncin a benzina, 2 marce avanti + retromarcia",
-        img: "https://diesseagri.it/wp-content/uploads/2025/05/115-600x810.jpg",
+        img: "/images/catalog/catalog-3155e48dadd672bc.jpg",
         description:
           "Motozappa Diesse con motore Loncin a benzina da 6,5 CV e avviamento a strappo con autoavvolgente. La trasmissione dispone di 2 marce avanti più retromarcia, con ingranaggi in bagno d'olio e frizione conica a bagno d'olio. Completa di presa di forza, stegola di guida registrabile e dispositivo di sicurezza antinfortunistico. La fresa a 6 elementi con dischi laterali permette di preparare il terreno con una macchina robusta e adatta alle lavorazioni più impegnative.",
         features: [
@@ -181,7 +181,7 @@ export const categories = [
           "/images/motozappa-ds84-lombardini-5.png",
         ],
         description:
-          "motore Lombardini 15LD440, asso 30, 3 marce, diesel. Venduta con zappetta, possibile aggiunta di rulli",
+          "Motore Lombardini 15LD440, asso 30, 3 marce, diesel. Venduta con zappetta; è possibile aggiungere i rulli.",
         features: [
           "Motore Lombardini 15LD440",
           "Cambio a 3 marce",
@@ -279,7 +279,7 @@ export const categories = [
       {
         title: "Kohler (Lombardini) KD15-440",
         detail: "Diesel, albero conico",
-        img: "https://www.imbriano.it/10318-large_default/motore-lombardini-15ld440-diesel-conico-kd15-440-kohler.jpg",
+        img: "/images/catalog/catalog-69fc2e00a28c9857.jpg",
         description:
           "Monocilindrico diesel raffreddato ad aria da 441 cm³, erede diretto del Lombardini 15LD440 e aggiornato da Kohler alla normativa Stage V con consumi e emissioni più bassi. Eroga 7,4 kW / 10,1 CV a 3600 giri con una coppia di 24,5 Nm già a 2200 giri: è la spinta ai bassi regimi che serve alla motozappa quando la fresa entra nel duro. Iniezione diretta, lubrificazione forzata e basamento in alluminio con canna in ghisa. Il sistema di adescamento automatico del gasolio e la decompressione automatica rendono l'avviamento a strappo alla portata di tutti, e il filtro aria va sostituito ogni 500 ore.",
         features: [
@@ -305,7 +305,7 @@ export const categories = [
       {
         title: "Honda GX390",
         detail: "Benzina 4T, il classico professionale",
-        img: "https://www.honda-engines-eu.com/files/images/1000x1000xffffff/gx390-600x600px.jpg",
+        img: "/images/catalog/catalog-75622c93e1676e65.jpg",
         description:
           "Il monocilindrico che ha fatto scuola: 389 cm³ OHV con cilindro inclinato di 25°, albero orizzontale e raffreddamento ad aria. Eroga 8,7 kW / 11,7 CV a 3600 giri con 26,5 Nm di coppia a 2500, ed è la motorizzazione che si mette dove non ci si può permettere che il motore si fermi. L'architettura a valvole in testa gli dà una combustione efficiente, quindi consumi contenuti di carburante e olio, meno vibrazioni e meno rumore. L'accensione è digitale CDI ad anticipo variabile e la decompressione automatica alleggerisce lo strappo. Peso a secco 31,7 kg.",
         features: [
@@ -330,7 +330,7 @@ export const categories = [
       {
         title: "Loncin 270cc 4T benzina",
         detail: "9 HP, albero cilindrico",
-        img: "https://cdn.manomano.com/loncin-g270f-tq-motore-a-scoppio-avviamento-manuale-9-hp-albero-cilindrico-254-mm-4-tempi-benzina-P-5179128-19286737_1.jpg",
+        img: null,
         description:
           "Loncin G270F: monocilindrico a benzina 4 tempi raffreddato ad aria da 270 cm³, 6 kW / 9 CV a 3600 giri e 17,7 Nm di coppia a 2500. È il taglio di cilindrata giusto per rimotorizzare motozappe medio-grandi, motopompe, betoniere e generatori senza spendere quanto un motore giapponese. Questa versione ha l'albero cilindrico da 25,4 mm (1\"), ma lo stesso motore è disponibile anche con albero conico da 23 mm e in versione flangiata: portaci la macchina e verifichiamo in officina quale attacco ti serve.",
         features: [
@@ -352,9 +352,9 @@ export const categories = [
       {
         title: "Motore di importazione 10cv",
         detail: "Diesel, controllo qualità e ricambi garantiti",
-        img: "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e5/e552dc49-69a2-45a5-bc48-dc4bd67228aa?rule=fullscreen-1x-auto",
+        img: "/images/catalog/catalog-fda642f2bbbbec42.avif",
         description:
-          "Monocilindrico diesel raffreddato ad aria della famiglia 186F, 406/418 cm³ per 10 CV con iniezione diretta e avviamento a strappo autoavvolgente. È il motore che rimette in strada una motozappa o un motocoltivatore quando sostituire l'originale non ha più senso economicamente: costa una frazione di un europeo o giapponese di pari potenza e sugli attacchi è quasi sempre intercambiabile. La differenza la fa chi te lo vende: ogni motore che esce da qui passa il nostro controllo, e i ricambi li teniamo a magazzino — filtri, iniettore, guarnizioni, kit cilindro — perché il problema di questi motori non è la resa, è trovare i pezzi dopo.",
+          "Monocilindrico diesel raffreddato ad aria della famiglia 186F, 406/418 cm³ per 10 CV con iniezione diretta e avviamento a strappo autoavvolgente. È il motore che rimette in strada una motozappa o un motocoltivatore quando sostituire l'originale non ha più senso economicamente: costa una frazione del prezzo di un motore europeo o giapponese di pari potenza e sugli attacchi è quasi sempre intercambiabile. La differenza la fa chi te lo vende: ogni motore che esce da qui passa il nostro controllo, e i ricambi li teniamo a magazzino — filtri, iniettore, guarnizioni, kit cilindro — perché il problema di questi motori non è la resa, è trovare i pezzi dopo.",
         features: [
           "Iniezione diretta",
           "Avviamento a strappo autoavvolgente",
@@ -373,7 +373,7 @@ export const categories = [
       {
         title: "Hatz 10cv diesel",
         detail: "Motorenfabrik Ruhstorf, qualità tedesca",
-        img: "https://ormaquinarias.com.pe/wp-content/uploads/2025/03/motor-hatz-diesel-1B50E-frontal-560x560.jpg",
+        img: "/images/catalog/catalog-756d6723dcc1688b.jpg",
         description:
           "Serie 1B di Hatz, la Motorenfabrik di Ruhstorf che dal 1880 costruisce diesel industriali: monocilindrici raffreddati ad aria pensati per il lavoro continuo, non per l'hobbista. Nel taglio da 10 CV il riferimento è il 1B50, 517 cm³ per 7,9 kW a 3600 giri, mentre il 1B40 da 462 cm³ ne eroga 7,3. Costruzione in alluminio pressofuso, iniezione diretta e componentistica dimensionata per durare: è il motore che si sceglie quando la macchina deve lavorare tutti i giorni per anni e il fermo macchina costa più del motore stesso. Disponibile anche con avviamento elettrico (versione E).",
         features: [
@@ -396,7 +396,7 @@ export const categories = [
       {
         title: "Acme Lombardini ACT340",
         detail: "11cv, 340cc benzina",
-        img: "https://img.ricardostatic.ch/images/9623a174-bd53-434e-a9f4-a5b1bf984c6a/t_1800x1350/benzinmotor-acme-act-340-ohc-zu-aebi-hc44-bcs-lombardini",
+        img: "/images/catalog/catalog-a3e702f3048bc801.jpg",
         description:
           "Monocilindrico a benzina Acme ACT 340 OHC da 338 cm³, 8,1 kW / 11 CV a 3600 giri, con distribuzione monoalbero in testa e raffreddamento ad aria forzata. È il motore che si trova su molti motocoltivatori e motofalciatrici italiane — BCS, Aebi e simili — e l'albero conico lo rende il ricambio naturale su quelle macchine senza dover adattare nulla. Accensione elettronica, serbatoio da 6,5 litri e appena 30 kg a secco. Va alimentato con benzina senza piombo da 91 ottani o superiore.",
         features: [
@@ -419,7 +419,7 @@ export const categories = [
       {
         title: "Lombardini LGA280 10cv",
         detail: "Benzina, per motocoltivatori",
-        img: "https://deltaservicedieselengines.com/203-thickbox_default/motore-lombardini-lga-280.jpg",
+        img: "/images/catalog/catalog-219dd71df6380d01.jpg",
         description:
           "Monocilindrico a benzina Lombardini LGA 280 da 275 cm³, 6,6 kW / 9 CV a 3600 giri e 19,2 Nm di coppia a 2600. Raffreddato ad aria, con distribuzione monoalbero in testa comandata da cinghia dentata: una soluzione più silenziosa e regolare delle classiche aste e bilancieri. È il motore di riferimento sui motocoltivatori italiani, con cono da 23 mm che lo rende sostituibile senza modifiche. Disponibile con avviamento a strappo o elettrico.",
         features: [
@@ -440,7 +440,7 @@ export const categories = [
       {
         title: "Loncin 14cv diesel 186F",
         detail: "Monocilindrico raffreddato ad aria",
-        img: "https://www.crossfer.de/WebRoot/SageSMB/Shops/crossfer/650C/0870/BC35/272E/3258/0A0C/05BC/A34B/Gallerie_04.jpg",
+        img: "/images/catalog/catalog-afe3b63819379bf9.jpg",
         description:
           "Monocilindrico diesel Loncin della serie 186F, raffreddato ad aria, con iniezione diretta e avviamento a strappo autoavvolgente. Sul mercato italiano viene chiamato \"14 cavalli\" per convenzione commerciale, ma la potenza effettiva è di circa 10 CV: è la cilindrata giusta per motozappe pesanti, motocoltivatori e macchine operatrici che devono girare a lungo con consumi bassi. Il gasolio, a parità di lavoro, costa meno della benzina e il motore scalda di meno sotto sforzo prolungato.",
         features: [
@@ -460,7 +460,7 @@ export const categories = [
       {
         title: "Total 5.5cv cilindrico",
         detail: "Benzina, entry level affidabile",
-        img: "https://www.picclickimg.com/rHsAAeSw~MVo0rIj/55-HP-41-KW-Motore-a-benzina.webp",
+        img: "/images/catalog/catalog-3b60f2be1de3ae1e.webp",
         description:
           "Monocilindrico a benzina 4 tempi da 163 cm³ e 5,5 CV con albero cilindrico: il motore entry level per rimotorizzare motozappe leggere, motopompe, betoniere e piccoli generatori. Riprende l'architettura e le quote dei 160 cc più diffusi, quindi nella maggior parte dei casi si monta al posto dell'originale senza adattamenti. Non è un motore da lavoro continuo, ma per l'uso stagionale sull'orto o in cantiere fa il suo mestiere a una frazione del costo, e i ricambi li teniamo in officina.",
         features: [
@@ -480,7 +480,7 @@ export const categories = [
       {
         title: "Loncin 6.5cv",
         detail: "Alberi cilindrici e conici disponibili",
-        img: "https://cdn.manomano.com/images/images_products/5179128/P/157820649_1.jpg",
+        img: null,
         description:
           "Loncin G200F, il monocilindrico a benzina da 196 cm³ più diffuso sulle macchine da giardino e agricoltura leggera. Eroga 4,1 kW a 3600 giri — i \"6,5 CV\" sono la denominazione commerciale Loncin — con 12,4 Nm di coppia a 2500. Lo teniamo sia con albero cilindrico che conico, così copre praticamente ogni sostituzione: motozappe, motopompe, betoniere, generatori. È il motore che montiamo più spesso sulle macchine che assembliamo in officina, perché costa poco, parte sempre e i ricambi si trovano.",
         features: [
@@ -500,7 +500,7 @@ export const categories = [
       {
         title: "Lombardini 25LD 330",
         detail: "Diesel bicilindrico",
-        img: "https://deltaservicedieselengines.com/64-large_default/motore-lombardini-25ld-3302.jpg",
+        img: "/images/catalog/catalog-9772f15981c7153d.jpg",
         description:
           "Lombardini 25LD 330-2: diesel bicilindrico da 654 cm³ raffreddato ad aria, con iniezione diretta. Eroga 11,2 kW / 15,2 CV a 3600 giri in servizio intermittente e circa 10 kW / 13,6 CV in continuo. Il doppio cilindro cambia il modo in cui la macchina lavora: coppia più regolare, molte meno vibrazioni e rumorosità inferiore rispetto a un monocilindrico di pari potenza — differenza che si sente dopo la prima ora di lavoro. Basamento in alluminio pressofuso con teste indipendenti e cilindri in ghisa rialesabili singolarmente, regolatore centrifugo a masse e correttore di coppia. Il motore per motocoltivatori pesanti, dumper, motopompe e gruppi elettrogeni.",
         features: [
@@ -525,9 +525,9 @@ export const categories = [
       {
         title: "Honda iGX440 STR",
         detail: "Benzina con centralina elettronica",
-        img: "https://www.honda.sk/content/dam/local/slovakia/industrial/engines/images/iGX440%20large.png/_jcr_content/renditions/c2.png",
+        img: "/images/catalog/catalog-9105f46c88335b65.png",
         description:
-          "Il primo monocilindrico general purpose al mondo con controllo elettronico del regime: 438 cm³ OHV per 9,5 kW / 12,7 CV a 3600 giri, gestiti da una centralina con regolatore STR (Self Tuning Regulator). Al posto del classico regolatore meccanico, l'ECU legge in continuo apertura farfalla e giri motore e corregge elettronicamente la farfalla per tenere il regime costante al variare del carico — la macchina non cala quando il lavoro si fa duro. Il sistema non richiede batteria. Valvola carburante e starter sono automatici: si preme e parte, senza rubinetti né aria da regolare. Accensione digitale CDI.",
+          "Il primo monocilindrico general purpose al mondo con controllo elettronico del regime: 438 cm³ OHV per 9,5 kW / 12,7 CV a 3600 giri, gestiti da una centralina con regolatore STR (Self Tuning Regulator). Al posto del classico regolatore meccanico, l'ECU legge continuamente l'apertura della farfalla e il regime del motore e corregge elettronicamente la farfalla per tenere il regime costante al variare del carico — la macchina non cala quando il lavoro si fa duro. Il sistema non richiede batteria. Valvola carburante e starter sono automatici: si preme e parte, senza rubinetti né aria da regolare. Accensione digitale CDI.",
         features: [
           "Regolatore elettronico STR (Self Tuning Regulator)",
           "Regime costante al variare del carico",
@@ -556,7 +556,7 @@ export const categories = [
         title: "Bertolini BTS 50",
         price: 2699,
         listPrice: 3654,
-        img: "https://www.fm2magni.com/memo/444-home_default/trinciatutto-bertolini-bts-50-.jpg",
+        img: "/images/catalog/catalog-857ae231d645b2e3.jpg",
         description:
           "Trinciatutto Bertolini BTS 50 con motore Emak K 800 H da 182 cm³ e 5,7 HP ad avviamento autoavvolgente. È il modello compatto della gamma, pensato tanto per il privato con terreno impegnativo quanto per il manutentore del verde: 50 cm di larghezza di lavoro e un rotore con 26 coltelli a \"Y\" che tritura erba alta, tralci, rami e vegetazione bassa. L'altezza di taglio si regola da 20 a 80 mm con una manovella, senza attrezzi. Cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio, frizione a cinghia con tendicinghia e frizioni di sterzo indipendenti per girare stretto anche in spazi angusti. Ruote generose che gli permettono di lavorare su ogni terreno.",
         features: [
@@ -584,7 +584,7 @@ export const categories = [
         title: "Bertolini 65 — Emak K1100H",
         price: 3599,
         listPrice: 4630,
-        img: "https://www.fm2magni.com/memo/360-large_default/trinciatutto-bertolini-bts-65-emak.jpg",
+        img: "/images/catalog/catalog-ec7ddef36ec5e06c.jpg",
         description:
           "Trinciatutto Bertolini BTS 65 con motore Emak K 1100 H da 302 cm³ e 8,4 HP. Macchina da lavoro intensivo per agricoltori e professionisti del verde: 65 cm di larghezza di lavoro e rotore con 38 coltelli a \"Y\" che affrontano erba, tralci, rami, vegetazione bassa, sterpaglie e stoppie, in frutteto come in vigneto. Altezza di taglio regolabile da 20 a 80 mm. Cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio, frizioni di sterzo indipendenti e freno di servizio automatico; le ruote anteriori pivotanti si possono bloccare per tenere la traiettoria dritta sui lunghi tratti.",
         features: [
@@ -612,9 +612,9 @@ export const categories = [
         title: "Bertolini 65 — Honda GX340 OHV",
         price: 3999,
         listPrice: 5163,
-        img: "https://www.fm2magni.com/memo/361-home_default/trinciatutto-bertolini-bts-65-honda.jpg",
+        img: "/images/catalog/catalog-c6b054c33cce28db.jpg",
         description:
-          "Trinciatutto Bertolini BTS 65 nella motorizzazione più potente, con Honda GX 340 OHV da 10,7 HP: stesso telaio della versione Emak ma con la riserva di coppia che serve quando si lavora tutto il giorno su sterpaglia fitta o in salita. Larghezza di lavoro 65 cm e rotore con 38 coltelli a \"Y\" per erba, tralci, rami e stoppie; altezza di taglio regolabile da 20 a 80 mm. Cambio a 3 marce avanti più retromarcia in bagno d'olio, frizioni di sterzo indipendenti e freno di servizio automatico.",
+          "Trinciatutto Bertolini BTS 65 nella motorizzazione più potente, con Honda GX 340 OHV da 10,7 HP: lo stesso telaio della versione Emak ma con la riserva di coppia che serve quando si lavora tutto il giorno su sterpaglia fitta o in salita. Larghezza di lavoro 65 cm e rotore con 38 coltelli a \"Y\" per erba, tralci, rami e stoppie; altezza di taglio regolabile da 20 a 80 mm. Cambio a 3 marce avanti più retromarcia in bagno d'olio, frizioni di sterzo indipendenti e freno di servizio automatico.",
         features: [
           "Rotore con 38 coltelli a \"Y\"",
           "Altezza di taglio 20-80 mm",
@@ -640,9 +640,9 @@ export const categories = [
         detail: "Con ruote",
         price: 4899,
         listPrice: 6250,
-        img: "https://www.fm2magni.com/memo/362-large_default/trinciatutto-bertolini-bts-80.jpg",
+        img: "/images/catalog/catalog-6f82ad8d1a9f7984.jpg",
         description:
-          "Il modello più grande della gamma trinciatutto Bertolini: 80 cm di larghezza di lavoro e un rotore con 46 coltelli a \"Y\", mosso dal motore Honda GX 340 OHV da 10,7 HP. È costruito per condizioni estreme e per il lavoro in pendenza, dove serve capacità di trinciatura e una macchina che non si ferma. Altezza di taglio regolabile da 20 a 80 mm, cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio. Lo sterzo a frizioni indipendenti con bloccaggio ruote e le ruote anteriori pivotanti comandate a leva rendono manovrabile una macchina da 175 kg.",
+          "Il modello più grande della gamma trinciatutto Bertolini: 80 cm di larghezza di lavoro e un rotore con 46 coltelli a \"Y\", mosso dal motore Honda GX 340 OHV da 10,7 HP. È costruito per condizioni estreme e per il lavoro in pendenza, dove servono capacità di trinciatura e una macchina che non si ferma. Altezza di taglio regolabile da 20 a 80 mm, cambio a 3 marce avanti più retromarcia con ingranaggi in bagno d'olio. Lo sterzo a frizioni indipendenti con bloccaggio ruote e le ruote anteriori pivotanti comandate a leva rendono manovrabile una macchina da 175 kg.",
         features: [
           "Rotore con 46 coltelli a \"Y\"",
           "Altezza di taglio 20-80 mm",
@@ -675,7 +675,7 @@ export const categories = [
         title: "Orec RMK151",
         price: 14899,
         listPrice: 17287.4,
-        img: "https://www.radmoretucker.co.uk/wp-content/uploads/2024/03/Orec-RMK151-Rabbit-Ride-On-Brushcutter-Mower-700x700.jpg",
+        img: "/images/catalog/catalog-634f55524eb49a27.jpg",
         description:
           "Trattorino falciatutto Orec Rabbit RMK151, una macchina unica nel suo genere: monta un'appendice alare mobile interfilare che si estende lateralmente e permette di falciare attorno a ostacoli e alberi senza danneggiare i tronchi, oppure di lavorare fra i filari di vigneti e frutteti e sotto i pannelli fotovoltaici. Il piatto centrale porta due lame flottanti, mentre l'ala aggiunge due lame fisse e una testina a 4 fili di nylon per rifinire a ridosso del ceppo: la larghezza di taglio passa così da 135 cm ad ala chiusa a 150 cm ad ala aperta. Motore Kawasaki FS651V OHV bicilindrico a V da 726 cc con avviamento elettrico e filtro aria a doppio stadio, trasmissione idrostatica Orec con bloccaggio differenziale di serie e velocità regolabile in continuo fino a 10 km/h.",
         features: [
@@ -705,11 +705,11 @@ export const categories = [
         title: "Orec RM882",
         price: 9990,
         listPrice: 11821.8,
-        img: "https://www.duedistore.com/wp-content/uploads/2021/03/Orec-Rabbit-RM882-scaled-1.jpg",
+        img: "/images/catalog/catalog-a08cf647132eee88.jpg",
         description:
           "Trattorino falciatutto Orec Rabbit RM882 con motore Kawasaki FS481V OHV da 603 cc ad avviamento elettrico e trasmissione idrostatica con bloccaggio differenziale inseribile. Le due lame flottanti in acciaio triturano arbusti fino a 30 mm di spessore su una larghezza di taglio di 88 cm, con altezza regolabile da 50 a 110 mm assistita da pistone a gas. Il piatto è in acciaio COR-TEN anticorrosione da 3,5 mm con ampio ingresso anteriore, così l'erba alta entra senza intasare. Baricentro ribassato e assale anteriore tubolare da 38 mm danno stabilità in pendenza e sui terreni sconnessi, permettendo di tagliare vicino all'ostacolo mantenendo sempre l'aderenza.",
         features: [
-          "2 lame flottanti in acciaio, triturano arbusti fino a 30 mm",
+          "2 lame flottanti in acciaio che triturano arbusti fino a 30 mm",
           "Piatto in acciaio COR-TEN anticorrosione da 3,5 mm",
           "Ampio ingresso anteriore per l'erba alta",
           "Trasmissione idrostatica a variazione continua",
@@ -748,7 +748,7 @@ export const categories = [
           "/images/spaccalegna-10t-honda-gx160-4.jpg",
         ],
         description:
-          "Spaccalegna con forza di spinta da 10 tonnellate, equipaggiato con motore Honda GX 160 a benzina e pompa italiana. L'accetta è sottoposta a trattamento termico, mentre il gancio traino e le ruote con cuscinetti ne agevolano lo spostamento.",
+          "Spaccalegna con forza di spinta da 10 tonnellate, equipaggiato con motore Honda GX 160 a benzina e pompa italiana. L'accetta è sottoposta a trattamento termico, mentre il gancio di traino e le ruote con cuscinetti ne agevolano lo spostamento.",
         features: [
           "Forza di spinta da 10 tonnellate",
           "Motore Honda GX 160 a benzina",
@@ -778,7 +778,7 @@ export const categories = [
           "/images/spaccalegna-15t-professionale-5.jpg",
         ],
         description:
-          "Spaccalegna professionale con forza di spinta da 15 tonnellate, equipaggiato con motore Lombardini LGA 340 a benzina e pompa italiana. Il gancio traino e le ruote con cuscinetti ne agevolano lo spostamento.",
+          "Spaccalegna professionale con forza di spinta da 15 tonnellate, equipaggiato con motore Lombardini LGA 340 a benzina e pompa italiana. Il gancio di traino e le ruote con cuscinetti ne agevolano lo spostamento.",
         features: [
           "Forza di spinta da 15 tonnellate",
           "Motore Lombardini LGA 340 a benzina",
@@ -838,7 +838,7 @@ export const categories = [
         title: "Orec HRC813",
         price: 7790,
         listPrice: 8857.2,
-        img: "https://www.fiaba.net/wp-content/uploads/2019/03/Orec-trinciasarmenti-professionale-a-cingoli-HRC813-fsx-1200x800.jpg",
+        img: "/images/catalog/catalog-49626e494452a887.jpg",
         description:
           "Trinciasarmenti professionale a cingoli Orec HRC813, il modello da 80 cm della serie Bull. Il rotore con 46 flagelli gira a 3.075 giri/min con taglio in risalita e affronta erba alta, sarmenti, rovi e sterpaglia dove una macchina su ruote non fa presa. I cingoli triangolari in gomma con frizioni di sterzo bloccabili gli permettono di lavorare su pendenze fino a 25° senza rovinare il terreno. Motore Honda GX340 OHV nella versione HIE, studiata per il funzionamento a forte inclinazione, con avviamento autoavvolgente. Cambio meccanico a 3 marce avanti più retromarcia, altezza di taglio da 50 a 110 mm e stegola regolabile su 4 altezze e 5 posizioni orizzontali.",
         features: [
@@ -867,7 +867,7 @@ export const categories = [
         title: "Orec HRC673",
         price: 6790,
         listPrice: 7747,
-        img: "https://www.fiaba.net/wp-content/uploads/2019/03/Orec-trinciasarmenti-professionale-a-cingoli-HRC673-dsx-1536x1024.jpg",
+        img: "/images/catalog/catalog-847472577b120fd0.jpg",
         description:
           "Trinciasarmenti professionale a cingoli Orec HRC673, la versione da 65 cm della serie Bull: più stretta della HRC813, passa dove gli spazi sono ridotti — fra i filari, lungo le scarpate, nei fondi chiusi. Rotore con 38 flagelli a 3.075 giri/min per erba alta, sarmenti e sterpaglia, con altezza di taglio regolabile da 50 a 110 mm. Motore Honda GX270 OHV in versione HIE per il funzionamento a forte inclinazione e avviamento autoavvolgente. Cingoli triangolari bloccabili e frizioni di sterzo indipendenti la rendono sicura fino a 25° di pendenza; telaio in acciaio e protezioni a bandelle a difesa dell'operatore.",
         features: [
@@ -903,7 +903,7 @@ export const categories = [
       {
         title: "Obistica 45cc — asta AMA KD3 450",
         detail: "Motore di importazione, controllo qualità e ricambi",
-        img: "https://www.faddagianni.it/5278-large_default/decespugliatore-ama-kawasaki-kd3-450.jpg",
+        img: "/images/catalog/catalog-69262654d99eed70.jpg",
         description:
           "Decespugliatore assemblato in officina con motore Obistica a 2 tempi da 45 cm³ e asta rigida AMA KD3 450 da 28 mm. È una soluzione concreta per lo sfalcio di erba alta, bordi, fossi e vegetazione più consistente, pensata per chi cerca una macchina semplice da mantenere senza sostenere il costo di una motorizzazione di marca. L'impugnatura singola facilita il lavoro negli spazi stretti e sui terreni irregolari; prima della consegna controlliamo l'assemblaggio e restiamo il riferimento per manutenzione e ricambi.",
         features: [
@@ -922,7 +922,7 @@ export const categories = [
       },
       {
         title: "Stihl FS70RC",
-        img: "https://www.spaziverdistore.it/3694-large_default/decespugliatore-stihl-fs-70-rc-e-a-scoppio.jpg",
+        img: "/images/catalog/catalog-5e24693d567fdcda.jpg",
         description:
           "Decespugliatore Stihl FS 70 RC-E con motore 2-MIX da 27,2 cm³ e 0,90 kW / 1,22 CV, efficiente e a basse emissioni (conforme Stage V). L'impugnatura circolare con limitatore di passo garantisce la massima libertà di movimento nei lavori in spazi ristretti, mentre l'impugnatura multifunzione a una mano è utilizzabile sia da destrorsi che da mancini. L'avviamento è facilitato dal sistema ErgoStart, che riduce lo sforzo di tiraggio, e dalla pompa carburante manuale. Peso di soli 4,8 kg senza carburante e utensile di taglio.",
         features: [
@@ -944,7 +944,7 @@ export const categories = [
       },
       {
         title: "Stihl FS120",
-        img: "https://www.memigavi.it/wp-content/uploads/2020/04/121.jpg",
+        img: "/images/catalog/catalog-9add32b538ace442.jpg",
         description:
           "Decespugliatore Stihl FS 120 con motore 2-MIX da 30,8 cm³ e 1,30 kW / 1,80 CV, pensato per falciare superfici ampie con erba tenace. L'impugnatura a manubrio e la doppia tracolla imbottita di serie distribuiscono il peso e permettono di lavorare a lungo senza affaticarsi; il sistema antivibrante STIHL protegge muscoli e articolazioni. L'avviamento ElastoStart e la pompa carburante manuale ammorbidiscono lo strappo, mentre il compensatore mantiene costanti prestazioni e consumi anche con il filtro dell'aria sporco.",
         features: [
@@ -986,7 +986,7 @@ export const categories = [
       {
         title: "Kawasaki TJ45E — asta MGF DK5100L",
         detail: "Assemblato in officina",
-        img: "https://newgardenstore.eu/61687-large_default/Motore-completo-2-tempi-decespugliatore-TJ45E-KAWASAKI-45cc-SOSTITUTIVO.jpg",
+        img: "/images/catalog/catalog-066469fd8e821319.jpg",
         description:
           "Decespugliatore professionale assemblato in officina attorno al Kawasaki TJ45E: monocilindrico 2 tempi da 45,4 cm³, capace di 1,42 kW / 1,90 HP a 7.500 giri e 2,18 Nm di coppia a 5.000 giri. La potenza viene abbinata all'asta MGF DK5100L da 28 mm, con trasmissione antivibrante e coppia conica rinforzata, per affrontare erba alta, sterpaglie e lavori prolungati. Il carburatore a membrana consente di lavorare in diverse inclinazioni e l'avviamento Kawasaki KAR riduce lo sforzo necessario alla messa in moto.",
         features: [
@@ -1009,7 +1009,7 @@ export const categories = [
       {
         title: "Kawasaki TJ53E — asta MGF DK6000L",
         detail: "Assemblato in officina",
-        img: "https://www.bazargiusto.it/wp-content/uploads/2025/01/motore-completo-di-ricambio-per-decespugliatore-kawasaki-tj53e-1.jpg",
+        img: "/images/catalog/catalog-c0d426a583f77226.jpg",
         description:
           "La configurazione più potente della gamma MGF con motore Kawasaki: il DK6000L monta il TJ53E da 53,2 cm³, capace di 2 kW / 2,68 HP a 8.500 giri e 3 Nm di coppia a 5.000 giri. L'asta rigida MGF da 28 mm, con sei boccole autolubrificanti e sistema antivibrante, rende l'insieme più controllabile nelle sessioni lunghe su erba fitta, sterpaglie e rovi. Il carburatore a membrana, la frizione centrifuga e l'avviamento Kawasaki KAR completano una macchina destinata allo sfalcio intensivo.",
         features: [
@@ -1034,9 +1034,9 @@ export const categories = [
       {
         title: "Kawasaki TJ53E — asta Honda MGF DH500V",
         detail: "Assemblato in officina",
-        img: "https://www.fiaba.net/wp-content/uploads/2019/02/mgf-decespugliatore-kawasaki-honda-asta-interna-esterna.jpg",
+        img: "/images/catalog/catalog-e03c7b87969c6d5d.jpg",
         description:
-          "Assemblato professionale che unisce la spinta del Kawasaki TJ53E da 53,2 cm³ all'asta di alta gamma MGF DH500V. Il motore sviluppa 2 kW / 2,68 HP a 8.500 giri e una coppia massima di 3 Nm, per lavorare con decisione su erba tenace, sottobosco e rovi. L'asta DH500V è scelta per la qualità della trasmissione e per il contenimento delle vibrazioni: una configurazione rivolta a chi usa il decespugliatore a lungo e vuole maggiore comfort senza rinunciare alla potenza del TJ53E.",
+          "Decespugliatore professionale assemblato in officina, che unisce la spinta del Kawasaki TJ53E da 53,2 cm³ all'asta di alta gamma MGF DH500V. Il motore sviluppa 2 kW / 2,68 HP a 8.500 giri e una coppia massima di 3 Nm, per lavorare con decisione su erba tenace, sottobosco e rovi. L'asta DH500V è scelta per la qualità della trasmissione e per il contenimento delle vibrazioni: una configurazione rivolta a chi usa il decespugliatore a lungo e vuole maggiore comfort senza rinunciare alla potenza del TJ53E.",
         features: [
           "Motore Kawasaki TJ53E da 53,2 cm³",
           "Volano bilanciato per ridurre le vibrazioni",
@@ -1057,7 +1057,7 @@ export const categories = [
       {
         title: "Honda GX50 — asta AMA KD3 450X",
         detail: "4 tempi, assemblato in officina",
-        img: "https://www.agricolbio.it/shop/3362-large_default/decespugliatore-a-impugnatura-singola-con-motore-4-tempi-honda-gx50-ohc-da-479-cc-asta-28-mm.jpg",
+        img: "/images/catalog/catalog-c39a0dcda938d73f.jpg",
         description:
           "Decespugliatore assemblato con Honda GX50, monocilindrico OHC a benzina da 47,9 cm³ e 1,47 kW / 2 HP: offre la coppia di un motore di cilindrata importante senza richiedere la preparazione della miscela. Il GX50 può lavorare inclinato in qualsiasi posizione, caratteristica essenziale su scarpate e fossi, ed è abbinato a un'asta AMA da 28 mm. La distribuzione con cinghia a bagno d'olio contribuisce a contenere rumore e ingombri; consumi ridotti, avviamento autoavvolgente e risposta pronta ne fanno una scelta indicata per chi preferisce la regolarità del 4 tempi.",
         features: [
@@ -1096,7 +1096,7 @@ export const categories = [
           "/images/cub-cadet-xt2-ps107-4.jpg",
         ],
         description:
-          "Trattorino rasaerba Cub Cadet XT2 PS107 della serie Enduro, progettato per tagliare rapidamente prati ampi e muoversi con precisione anche attorno ad alberi e aiuole. Il motore Kawasaki V-Twin da 603 cm³ eroga 9,8 kW a 2.300 giri/min, mentre la trasmissione idrostatica a pedale consente di regolare in modo continuo avanzamento e retromarcia senza cambiare marcia. Il piatto stampato da 107 cm utilizza due lame, scarico laterale e innesto elettromagnetico; altezza regolabile in 12 posizioni da 25 a 100 mm, kit mulching e lame mulching di serie. Il sistema Tight Turn xTreme riduce il raggio di sterzata a soli 17 cm. Telaio saldato, assale anteriore in ghisa, fari LED, cruise control e sedile alto regolabile completano una macchina robusta e confortevole, con cesto da 200 litri disponibile come accessorio.",
+          "Trattorino rasaerba Cub Cadet XT2 PS107 della serie Enduro, progettato per tagliare rapidamente prati ampi e muoversi con precisione anche attorno ad alberi e aiuole. Il motore Kawasaki V-Twin da 603 cm³ eroga 9,8 kW a 2.300 giri/min, mentre la trasmissione idrostatica a pedale consente di regolare in modo continuo avanzamento e retromarcia senza cambiare marcia. Il piatto stampato da 107 cm è dotato di due lame, scarico laterale e innesto elettromagnetico; l'altezza è regolabile in 12 posizioni da 25 a 100 mm, con kit mulching e lame mulching di serie. Il sistema Tight Turn xTreme riduce il raggio di sterzata a soli 17 cm. Telaio saldato, assale anteriore in ghisa, fari LED, cruise control e sedile alto regolabile completano una macchina robusta e confortevole, con cesto da 200 litri disponibile come accessorio.",
         features: [
           "Motore Kawasaki V-Twin bicilindrico da 603 cm³",
           "Trasmissione idrostatica a pedale con velocità continua",
@@ -1133,7 +1133,7 @@ export const categories = [
       },
       {
         title: "Snapper RPX102 — B&S 7220",
-        img: "https://www.centroverderovigo.com/wp-content/uploads/2025/01/snapper-trattorino-rpx102-tagliaerba-raccolta-ventrale-fdx1-000-768x596.jpg",
+        img: "/images/catalog/catalog-83a01dc5901a7508.jpg",
         description:
           "Trattorino rasaerba Snapper RPX102 con motore Briggs & Stratton 7220 EXi V-Twin, piatto a due lame da 102 cm e capiente cesto posteriore da 300 litri. La trasmissione idrostatica Tuff Torq K46 permette di variare la velocità in modo continuo senza cambiare marcia, rendendo più fluide le manovre attorno ad alberi e aiuole. Le sei altezze di taglio da 30 a 90 mm coprono dalla rifinitura ordinaria all'erba più sviluppata; l'innesto elettrico delle lame e il sedile con schienale medio completano una macchina pensata per prati ampi e sessioni di lavoro prolungate.",
         features: [
@@ -1158,7 +1158,7 @@ export const categories = [
       },
       {
         title: "Alpina AT4 84 — Stiga ST350",
-        img: "https://hidrotecnoshop.it/wp-content/uploads/2022/10/4691a6726a931ba787ab53bcc3b52ca31a889b6e_AT484A_2T2000404A22_full01.jpg.jpg",
+        img: "/images/catalog/catalog-18af67688a998af0.jpg",
         description:
           "Trattorino Alpina AT4 84 A con motore monocilindrico STIGA ST 350 da 352 cm³ e 5,8 kW, adatto alla manutenzione di prati fino a circa 3.000 m². Il piatto da 84 cm con due lame raccoglie nel cesto posteriore da 200 litri, ma consente anche lo scarico posteriore e il taglio mulching. Il cambio meccanico a cinque marce avanti più retromarcia è semplice e robusto; l'altezza si regola in sette posizioni da 25 a 80 mm e le lame si inseriscono tramite frizione elettromagnetica premendo un pulsante.",
         features: [
@@ -1192,11 +1192,11 @@ export const categories = [
       {
         title: "Loncin 196cc, 3 marce, trazionato",
         detail: "Disponibile con motore Loncin o Honda, regolazione altezza",
-        img: "https://media.adeo.com/marketplace/MKP/89180268/18fc0880077123597a3a3b1c16bfc8c8.jpeg",
+        img: "/images/catalog/catalog-f47d7b4025274d3c.jpg",
         description:
-          "Decespugliatore a ruote KB60 con motore a benzina 4 tempi Loncin da 196 cc e avviamento con autoavvolgente. 3 velocità in avanti, cambio e trasmissione meccanica, ruote Tractor 3.50×8. Rotore con frizione a tendicinghia e freno automatico, larghezza di lavoro 60 cm. Regolazione rapida dell'altezza di taglio e stegola di guida orientabile in ogni posizione.",
+          "Decespugliatore a ruote KB60 con motore a benzina 4 tempi Loncin da 196 cc e avviamento con autoavvolgente. 3 velocità in avanti, cambio e trasmissione meccanici, ruote Tractor 3.50×8. Rotore con frizione a tendicinghia e freno automatico, larghezza di lavoro 60 cm. Regolazione rapida dell'altezza di taglio e stegola di guida orientabile in ogni posizione.",
         features: [
-          "Cambio e trasmissione meccanica, 3 velocità in avanti",
+          "Cambio e trasmissione meccanici, 3 velocità in avanti",
           "Rotore con frizione a tendicinghia e freno automatico",
           "Regolazione rapida dell'altezza di taglio",
           "Stegola di guida orientabile in ogni posizione",
@@ -1215,7 +1215,7 @@ export const categories = [
       },
       {
         title: "Honda GCVx200 KB60",
-        img: "https://www.farmaciagricola.com/images/prodotti/ama/Rasaerba_TRX_531H_Honda_GCVx200/rasaerba_TRX_531_Honda_AMA.jpg",
+        img: "/images/catalog/catalog-8e0b0280fdb04954.jpg",
         description:
           "Decespugliatore a ruote KB60 nella versione con motore a benzina 4 tempi Honda GCVx200 da 201 cc. Rotore con frizione a tendicinghia e freno automatico, larghezza di lavoro 60 cm, ruote Tractor 3.50×8. Regolazione rapida dell'altezza di taglio e stegola di guida orientabile in ogni posizione: la macchina giusta per l'erba alta e i terreni incolti, senza fatica.",
         features: [
@@ -1242,7 +1242,7 @@ export const categories = [
     items: [
       {
         title: "Stihl MS194",
-        img: "https://www.stihl.it/content/dam/stihl/media/pim/10980.jpg",
+        img: null,
         description:
           "Motosega Stihl MS 194 C-E leggerissima, con motore 2-MIX da 31,8 cm³ e 1,40 kW / 1,90 CV. Pensata per la cura degli alberi, il diradamento dei boschi e il taglio della legna da ardere: pesa 3,6 kg senza spranga e catena, quindi si maneggia a lungo senza affaticare. L'avviamento è comodo grazie a STIHL ErgoStart e alla pompa carburante manuale, mentre la tensione laterale della catena permette di registrarla dal carter senza smontare nulla. Catena PM3 da 3/8\" per un taglio pulito e consumi contenuti.",
         features: [
@@ -1265,7 +1265,7 @@ export const categories = [
       },
       {
         title: "Stihl MS151",
-        img: "https://www.stihl.it/content/dam/stihl/media/pim/10964.jpg",
+        img: null,
         description:
           "Motosega Stihl MS 151 C-E: con 23,6 cm³ e appena 2,8 kg senza spranga e catena è una delle più leggere della gamma a miscela, ideale quando il peso conta più della potenza bruta — taglio a misura della legna da ardere, cura degli alberi, giardinaggio e manutenzione del verde. La catena 1/4\"P consente un taglio fine e preciso. Avviamento semplice con STIHL ErgoStart e pompa carburante manuale, filtro HD2 e tensione laterale della catena per la manutenzione quotidiana.",
         features: [
@@ -1287,7 +1287,7 @@ export const categories = [
       {
         title: "Stihl MS194T",
         detail: "Da potatura",
-        img: "https://www.faddagianni.it/5646-large_default/motosega-da-potatura-stihl-ms-194-t.jpg",
+        img: "/images/catalog/catalog-0de9857eb9ec6c73.jpg",
         description:
           "Motosega professionale da potatura Stihl MS 194 T, con impugnatura superiore per il lavoro in pianta. Motore 2-MIX da 31,8 cm³ e 1,40 kW / 1,90 CV, peso di 3,3 kg senza spranga e catena: è la macchina di riferimento per la cura della chioma, la rimozione del legno morto e il taglio di polloni e ricacci. Catena 1/4\" PM3, sistema antivibrante, lubrificazione STIHL Ematic e tensione laterale della catena. Attrezzo destinato a operatori formati per il tree climbing: l'uso senza adeguata formazione comporta seri rischi di infortunio.",
         features: [
@@ -1310,7 +1310,7 @@ export const categories = [
       },
       {
         title: "Stihl MS271",
-        img: "https://www.stihl.it/content/dam/stihl/mam/modell-landscape/c244ac07adfd4a6eb2db8d11b04caf7d.jpg",
+        img: null,
         description:
           "Motosega Stihl MS 271 con motore 2-MIX da 50,2 cm³ e 2,60 kW / 3,50 CV: una macchina versatile e robusta per piccole e medie utenze forestali, agricoltura, manutenzione del verde ed edilizia, particolarmente indicata per la lavorazione della legna da ardere. Il filtro aria a lunga durata HD2 con preseparazione allunga gli intervalli di manutenzione e il compensatore mantiene costanti potenza e consumi anche quando il filtro si sporca. Tensione laterale della catena e tappi a baionetta permettono di intervenire senza attrezzi. Peso 5,6 kg senza spranga e catena.",
         features: [
@@ -1332,7 +1332,7 @@ export const categories = [
       },
       {
         title: "Stihl MS311",
-        img: "https://www.giordano-cairo.com/6142/motosega-stihl-ms-311.jpg",
+        img: "/images/catalog/catalog-1ff55646349b14f6.jpg",
         description:
           "Motosega Stihl MS 311 con motore 2-MIX da 59 cm³ e 3,10 kW / 4,20 CV, la scelta giusta per chi si fa la legna da ardere in quantità medie e per l'uso in agricoltura e orticoltura. La valvola di decompressione manuale riduce sensibilmente lo sforzo necessario allo strappo, il comando monoleva tiene la mano destra sempre sull'impugnatura e la pompa dell'olio regolabile consente di adattare il flusso al tipo di legno, riducendone il consumo fino al 50%. Filtro aria a lunga durata e tensione laterale della catena per una manutenzione rapida.",
         features: [
@@ -1353,9 +1353,9 @@ export const categories = [
       },
       {
         title: "Stihl MS391",
-        img: "https://www.celanisrl.com/wp-content/uploads/2022/10/MS-391-1.jpg",
+        img: "/images/catalog/catalog-611c7486749ac68b.jpg",
         description:
-          "Motosega Stihl MS 391 con motore 2-MIX da 64,1 cm³ e 3,30 kW / 4,50 CV: unisce un'elevata capacità di taglio a un rapporto peso/potenza di 1,9 kg/kW fra i migliori della categoria. È la macchina per agricoltori, artigiani e manutentori del verde, con impieghi che vanno dal taglio della legna da ardere alla cura del paesaggio fino al legname da costruzione. Valvola di decompressione per un avviamento senza sforzo, pompa dell'olio regolabile fino al 50% in meno e sistema STIHL Ematic per una lubrificazione mirata di barra e catena.",
+          "Motosega Stihl MS 391 con motore 2-MIX da 64,1 cm³ e 3,30 kW / 4,50 CV: unisce un'elevata capacità di taglio a un rapporto peso/potenza di 1,9 kg/kW fra i migliori della categoria. È la macchina per agricoltori, artigiani e manutentori del verde, con impieghi che vanno dal taglio della legna da ardere alla cura del paesaggio fino al legname da costruzione. Valvola di decompressione per un avviamento senza sforzo, pompa dell'olio regolabile, per ridurre il consumo fino al 50%, e sistema STIHL Ematic per una lubrificazione mirata di barra e catena.",
         features: [
           "Motore STIHL 2-MIX",
           "Valvola di decompressione",
@@ -1376,7 +1376,7 @@ export const categories = [
       {
         title: "Motosega da potatura GGP Italia — barra 25 cm",
         price: 450,
-        img: "https://tradeshopitalia.com/60044-large_default/motosega-potatore-25cc-a-scoppio-benzina-lama-25-cm-per-potatura-professionale.jpg",
+        img: "/images/catalog/catalog-5b746c4159ace182.jpg",
         description:
           "Motosega compatta da potatura GGP Italia con motore monocilindrico a 2 tempi da 25,4 cm³ e barra da 25 cm. La potenza di 0,9 kW / 1,2 HP è dimensionata per la manutenzione di alberi da frutto, ulivi, arbusti e per il taglio di rami di piccolo e medio diametro. La barra corta rende la macchina più agile tra i rami e facilita i tagli controllati; l'avviamento manuale e la lubrificazione automatica della catena mantengono l'impostazione semplice e pratica per i lavori periodici in giardino e campagna.",
         features: [
@@ -1404,7 +1404,7 @@ export const categories = [
     items: [
       {
         title: "Stihl HS45R",
-        img: "https://www.agricolbio.it/shop/10966-large_default/tagliasiepi-a-scoppio-stihl-hs-45-lama-60-cm.jpg",
+        img: "/images/catalog/catalog-772b6cd69fb388db.jpg",
         description:
           "Tagliasiepi Stihl HS 45 con lama da 60 cm, il modello base della gamma a miscela: leggero e maneggevole, è ideale per arbusti e per la cura di siepi alte fino al petto. La lama a doppio taglio, con distanza fra i denti di 30 mm, lavora sia in verticale che in orizzontale ed è pensata per un taglio pulito e regolare. L'avviamento è uniforme grazie a STIHL ElastoStart, che smorza le forze di strappo, mentre la pompa carburante manuale riduce il numero di tiri necessari. Il sistema antivibrante protegge muscoli e articolazioni durante i lavori più lunghi.",
         features: [
@@ -1427,9 +1427,9 @@ export const categories = [
       },
       {
         title: "Stihl HS82R",
-        img: "https://www.verdepro.it/public/prodotti/HS82R.jpg",
+        img: "/images/catalog/catalog-d4bbf8fc71c1a585.jpg",
         description:
-          "Tagliasiepi professionale Stihl HS 82 R con motore 2-MIX da 22,7 cm³, progettato specificamente per la potatura. Il cambio è regolato per una bassa velocità delle lame: ne derivano elevate forze di taglio che, unite alla geometria delle lame e all'ampia distanza fra i denti (38 mm), permettono di affrontare rami e ramoscelli robusti con avanzamento costante. Le lame a doppio taglio consentono di rifinire siepi in verticale e in orizzontale, mentre l'impugnatura multifunzione girevole si adatta a destrorsi e mancini. La scelta di giardinieri, manutentori del verde e amministrazioni comunali.",
+          "Tagliasiepi professionale Stihl HS 82 R con motore 2-MIX da 22,7 cm³, progettato specificamente per la potatura. Il cambio è regolato per una bassa velocità delle lame: ne derivano elevate forze di taglio che, unite alla geometria delle lame e all'ampia distanza fra i denti (38 mm), permettono di affrontare rami e ramoscelli robusti con avanzamento costante. Le lame a doppio taglio consentono di rifinire siepi in verticale e in orizzontale, mentre l'impugnatura multifunzione girevole si adatta a destrorsi e mancini. È la scelta ideale per giardinieri, manutentori del verde e amministrazioni comunali.",
         features: [
           "Motore STIHL 2-MIX",
           "Cambio a bassa velocità per elevate forze di taglio",
@@ -1452,7 +1452,7 @@ export const categories = [
       {
         title: "Kawasaki TJ23V KA600D",
         detail: "Bilama girevole 60 cm",
-        img: "https://www.metautensili.it/12842-thickbox_default/kawasaki-tagliasiepe-ka600d-tj23v.jpg",
+        img: "/images/catalog/catalog-3de47d796d553d97.jpg",
         description:
           "Tagliasiepi KA600D con motore Kawasaki TJ23V a 2 tempi da 22,5 cm³ e lama bilaterale da 60 cm. I denti con passo da 35 mm e le lame in acciaio cromato sono adatti alla rifinitura di siepi ornamentali e alla potatura di vegetazione consistente. L'impugnatura girevole permette di mantenere polsi e braccia in una posizione più naturale nei tagli verticali e orizzontali. Il motore eroga 0,63 kW / 0,84 HP e adotta carburatore a membrana, accensione elettronica e avviamento facilitato Kawasaki KAR.",
         features: [
@@ -1505,7 +1505,7 @@ export const categories = [
     items: [
       {
         title: "Stihl BG56",
-        img: "https://www.oggiverde.it/images/stories/virtuemart/product/STIHL_BG_Laterale.jpg",
+        img: "/images/catalog/catalog-2df7c59edf9ec97c.jpg",
         description:
           "Soffiatore a scoppio Stihl BG 56, maneggevole e semplice da usare, con motore 2-MIX da 27,2 cm³ che riduce emissioni, consumi e costi di esercizio. Con l'ugello rotondo raggiunge 71 m/s e 700 m³/h, con una forza di soffiaggio di 13 N: abbastanza per rimuovere rapidamente foglie ed erba tagliata da vialetti, cortili e piazzali. Si comanda con una sola mano tramite l'impugnatura ergonomica, con il pulsante di arresto direttamente sul dispositivo, e pesa 4,1 kg a serbatoio vuoto. Con il kit di aspirazione opzionale diventa aspiratore e trituratore di foglie.",
         features: [
@@ -1527,7 +1527,7 @@ export const categories = [
       },
       {
         title: "Maruyama GK300B",
-        img: "https://www.metautensili.it/12856-large_default/maruyama-soffiatore-gk300b.jpg",
+        img: "/images/catalog/catalog-50e0764132011a75.jpg",
         description:
           "Soffiatore portatile professionale Maruyama GK300B con motore a 2 tempi da 30,1 cm³ e 1 kW / 1,36 HP. Muove fino a 13 m³ d'aria al minuto e raggiunge una velocità massima di 72,1 m/s, sufficiente per liberare rapidamente vialetti, cortili e aree verdi da foglie, erba tagliata e piccoli residui. Il peso di 4,3 kg e la configurazione manuale bilanciata lo rendono agile negli spostamenti; la costruzione Maruyama privilegia durata e continuità di rendimento per l'impiego frequente.",
         features: [
@@ -1642,9 +1642,9 @@ export const categories = [
         detail: "Atomizzatore a zaino a scoppio",
         img: "/images/kasei_3wfb.jpeg",
         description:
-          "L’atomizzatore Kasei 3WFB-30 a scoppio è molto potente, adatto a tutti i tipi di trattamento professionali nella funzione di nebulizzatore con una pompa supplementare che ne aumenta l’efficienza. Accessorio opzionale: kit polveri.",
+          "L’atomizzatore Kasei 3WFB-30 a scoppio è molto potente e adatto a tutti i trattamenti professionali nella funzione di nebulizzatore, con una pompa supplementare che ne aumenta l’efficienza. Accessorio opzionale: kit polveri.",
         features: [
-          "Pompa spinta liquidi integrata",
+          "Pompa di spinta dei liquidi integrata",
           "Funzione nebulizzatore professionale",
           "Kit polveri opzionale",
         ],

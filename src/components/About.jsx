@@ -84,7 +84,7 @@ export default function About() {
               lavoro. Costruiamo la tua motozappa o il tuo decespugliatore pezzo
               dopo pezzo, garantendo un rigoroso <strong>controllo qualità</strong> e
               la piena disponibilità dei <strong>ricambi</strong>, assicurando
-              massima affidabilità anche sulle componenti di importazione.
+              massima affidabilità anche sui componenti d’importazione.
             </p>
             <p>
               Il nostro supporto non termina con l'acquisto. La vera forza

@@ -20,7 +20,7 @@ function ProductGallery({ product }) {
   if (images.length === 0) {
     return (
       <div
-        className="modal-gallery"
+        className="modal-gallery modal-gallery-placeholder"
         role="img"
         aria-label={`Immagine segnaposto per ${product.title}`}
       >
@@ -104,7 +104,7 @@ function ProductGallery({ product }) {
 }
 
 export default function ProductModal({ product, onClose }) {
-  const hasGallery = Boolean(product);
+  const hasGallery = Boolean(product?.images?.length || product?.img);
 
   useEffect(() => {
     if (product) {
@@ -116,6 +116,8 @@ export default function ProductModal({ product, onClose }) {
       document.body.style.overflow = "";
     };
   }, [product]);
+
+  if (!product) return null;
 
   return (
     <div
@@ -134,7 +136,9 @@ export default function ProductModal({ product, onClose }) {
         </button>
         {product && (
           <>
-            <div className={`modal-header ${hasGallery ? "with-gallery" : ""}`}>
+            <div
+              className={`modal-header ${hasGallery ? "with-gallery" : "without-gallery"}`}
+            >
               <ProductGallery key={product.title} product={product} />
               <div className="modal-title-area">
                 <span className="modal-cat">{product.category}</span>
