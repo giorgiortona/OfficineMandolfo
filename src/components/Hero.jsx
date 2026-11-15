@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SLIDES = [
   { src: "/images/officina-parete.jpg", pos: "center" },
+  { src: "/images/scaffale-ricambi-lubrificanti.jpg", pos: "center 48%" },
   { src: "/images/showroom-fronte.jpg", pos: "center 40%" },
   { src: "/images/motori-banco.jpg", pos: "center 60%" },
   { src: "/images/generatore-kipor.jpg", pos: "center 45%" },

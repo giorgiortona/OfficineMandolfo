@@ -4,8 +4,16 @@ import gsap from "gsap";
 // Tutte le foto dell'officina: scorrono in un mazzo animato.
 const SHOTS = [
   { src: "/images/motozappe.jpeg", label: "Motozappe e macchine in officina" },
+  {
+    src: "/images/showroom-macchine-attrezzature.jpg",
+    label: "Macchine agricole e attrezzature disponibili in showroom",
+  },
   { src: "/images/officina-showroom.jpg", label: "Trattorini pronti in showroom" },
   { src: "/images/officina-lavoro.jpg", label: "Motozappa con motore Loncin sul banco" },
+  {
+    src: "/images/ricambi-lubrificanti-officina.jpg",
+    label: "Ricambi, lubrificanti e accessori disponibili in officina",
+  },
   { src: "/images/motozappe officina.jpeg", label: "Ricambi e attrezzatura a scaffale" },
   { src: "/images/officina-parete.jpg", label: "Decespugliatori e motozappe a parete" },
   { src: "/images/motori-banco.jpg", label: "Motori pronti per l'assemblaggio" },
