@@ -1,4 +1,4 @@
-// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 62 articoli, 15 categorie.
+// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 63 articoli, 15 categorie.
 // I prezzi mancanti sono "su preventivo". Le immagini puntano ai siti di rivenditori/produttori.
 
 export const categories = [
@@ -276,6 +276,40 @@ export const categories = [
     label: "Motori",
     tagline: "Per motozappa e macchine assemblate",
     items: [
+      {
+        title: "Motore Lombardini 9LD 625-2",
+        detail: "Nuovo, avviamento elettrico e predisposizione per pompa idraulica",
+        price: 3800,
+        img: "/images/lombardini-9ld-625-1.jpg",
+        images: [
+          "/images/lombardini-9ld-625-1.jpg",
+          "/images/lombardini-9ld-625-2.jpg",
+          "/images/lombardini-9ld-625-3.jpg",
+          "/images/lombardini-9ld-625-4.jpg",
+          "/images/lombardini-9ld-625-5.jpg",
+          "/images/lombardini-9ld-625-6.jpg",
+        ],
+        description:
+          "Motore diesel Lombardini 9LD 625-2 nuovo, completo di avviamento elettrico e predisposizione per pompa idraulica. Viene fornito nella confezione originale Kohler ed è disponibile con fattura. Una soluzione robusta per macchine agricole e applicazioni professionali che richiedono una motorizzazione bicilindrica affidabile.",
+        features: [
+          "Motore nuovo",
+          "Avviamento elettrico",
+          "Predisposizione per pompa idraulica",
+          "Configurazione bicilindrica diesel",
+          "Confezione originale Kohler",
+          "Possibilità di fattura",
+        ],
+        specs: [
+          { label: "Marca", value: "Lombardini (Kohler)" },
+          { label: "Modello", value: "9LD 625-2" },
+          { label: "Condizione", value: "Nuovo" },
+          { label: "Alimentazione", value: "Diesel" },
+          { label: "Cilindri", value: "2" },
+          { label: "Avviamento", value: "Elettrico" },
+          { label: "Predisposizione", value: "Pompa idraulica" },
+          { label: "Documentazione", value: "Fattura disponibile" },
+        ],
+      },
       {
         title: "Kohler (Lombardini) KD15-440",
         detail: "Diesel, albero conico",
