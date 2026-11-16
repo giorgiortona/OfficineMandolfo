@@ -1,4 +1,4 @@
-// Catalogo estratto da Catalogo_Attrezzature_Foto.html — 63 articoli, 15 categorie.
+// Catalogo estratto da Catalogo_Attrezzature_Foto.html e aggiornato con gli articoli dell'officina.
 // I prezzi mancanti sono "su preventivo". Le immagini puntano ai siti di rivenditori/produttori.
 
 export const categories = [
@@ -1119,6 +1119,47 @@ export const categories = [
     label: "Trattorini per Prato",
     tagline: "Comfort e potenza di taglio",
     items: [
+      // Prezzo fornito dal venditore; motore 8240 PXi da 724 cm³ confermato dalle foto.
+      // Specifiche: https://www.snapper.eu/it-it/trattorini-rasaerba/rtx102-trattorino-con-raccolta/
+      {
+        title: "Snapper RTX102",
+        detail: "Briggs & Stratton 8240 PXi V-Twin • Taglio 102 cm • Cesto 320 litri",
+        price: 6500,
+        img: null,
+        description:
+          "Trattorino rasaerba Snapper RTX102 con motore a benzina Briggs & Stratton 8240 PXi V-Twin da 724 cm³, pensato per la manutenzione dei prati ampi. Il piatto in acciaio stampato a due lame taglia su una larghezza di 102 cm, con sette altezze selezionabili da 25 a 95 mm e raccolta posteriore in un cesto da 320 litri, svuotabile dal posto di guida. La trasmissione idrostatica Tuff Torq K46 a pedale rende fluide le manovre, mentre il cruise control mantiene la velocità nelle passate più lunghe. Sedile regolabile con schienale alto, display LED multifunzione, fari LED e prese USB-A e USB-C completano la dotazione per lavorare con comfort. L'assale anteriore in ghisa, le quattro ruote di supporto del piatto e la presa di lavaggio facilitano il lavoro e la manutenzione.",
+        features: [
+          "Motore bicilindrico Briggs & Stratton 8240 PXi V-Twin da 724 cm³",
+          "Trasmissione idrostatica Tuff Torq K46 con comando a pedale",
+          "Piatto in acciaio stampato da 102 cm a due lame",
+          "Sette altezze di taglio da 25 a 95 mm",
+          "Cesto posteriore da 320 litri con svuotamento dal sedile",
+          "Innesto elettrico e funzione di spegnimento automatico delle lame",
+          "Cruise control e display LED multifunzione",
+          "Sedile regolabile con schienale alto e fari LED",
+          "Porte USB-A e USB-C",
+          "Assale anteriore in ghisa e paraurti in acciaio",
+          "Presa di lavaggio e quattro ruote di supporto del piatto",
+        ],
+        specs: [
+          { label: "Motore", value: "Briggs & Stratton 8240 PXi V-Twin OHV" },
+          { label: "Cilindrata", value: "724 cm³" },
+          { label: "Alimentazione", value: "Benzina" },
+          { label: "Avviamento", value: "Elettrico" },
+          { label: "Larghezza di taglio", value: "102 cm" },
+          { label: "Piatto", value: "Acciaio stampato, 2 lame" },
+          { label: "Altezza di taglio", value: "25 - 95 mm (7 posizioni)" },
+          { label: "Innesto lame", value: "Elettrico" },
+          { label: "Cesto raccolta", value: "320 litri" },
+          { label: "Trasmissione", value: "Idrostatica Tuff Torq K46 a pedale, 2WD" },
+          { label: "Velocità", value: "0 - 8 km/h AV, 0 - 5 km/h RM" },
+          { label: "Raggio di sterzata", value: "55 cm" },
+          { label: "Serbatoio", value: "12 litri" },
+          { label: "Ruote", value: "16 x 6.50 ant. / 20 x 10 post." },
+          { label: "Dimensioni", value: "243 x 108 x 132 cm" },
+          { label: "Peso", value: "271 kg" }
+        ]
+      },
       {
         title: "Cub Cadet XT2 PS107",
         detail: "Kawasaki V-Twin 603 cc, piatto bilama da 107 cm",
@@ -1589,6 +1630,42 @@ export const categories = [
     label: "Gruppo Elettrogeno",
     tagline: "Energia professionale e di emergenza",
     items: [
+      // Potenza e prezzo forniti dal venditore; allestimento visibile nelle foto.
+      // Caratteristiche comuni della serie B: https://hatz.com/en-global/products/engines/b-series
+      // La targhetta non permette di attribuire un modello preciso o i suoi dati specifici.
+      {
+        title: "Gruppo elettrogeno Hatz 3 kW monofase",
+        detail: "Motore diesel Hatz 10 CV • Alternatore NSM",
+        price: 1800,
+        img: null,
+        description:
+          "Gruppo elettrogeno monofase con potenza elettrica effettiva di 3 kW, equipaggiato con motore diesel Hatz da 10 CV e alternatore NSM. Il motore della serie B è un monocilindrico a quattro tempi raffreddato ad aria, con avviamento manuale a strappo. La struttura metallica con pannelli laterali aperti protegge il gruppo lasciando accessibili i componenti per le operazioni di controllo e manutenzione. Il quadro di uscita integra due prese industriali monofase e un indicatore di tensione a LED. Una soluzione per alimentare attrezzature e utenze monofase dove non è disponibile la rete elettrica.",
+        features: [
+          "Potenza elettrica effettiva di 3 kW",
+          "Uscita monofase",
+          "Motore diesel Hatz da 10 CV",
+          "Motore monocilindrico a quattro tempi raffreddato ad aria",
+          "Avviamento manuale a strappo",
+          "Alternatore NSM",
+          "Due prese industriali monofase",
+          "Indicatore di tensione a LED sul quadro di uscita",
+          "Struttura metallica di protezione con pannelli laterali aperti",
+        ],
+        specs: [
+          { label: "Potenza elettrica effettiva", value: "3 kW" },
+          { label: "Fasi", value: "Monofase" },
+          { label: "Motore", value: "Hatz diesel, serie B" },
+          { label: "Potenza motore", value: "10 CV" },
+          { label: "Alimentazione", value: "Gasolio" },
+          { label: "Tipo motore", value: "Monocilindrico, 4 tempi" },
+          { label: "Raffreddamento", value: "Ad aria" },
+          { label: "Avviamento", value: "Manuale a strappo" },
+          { label: "Alternatore", value: "NSM" },
+          { label: "Prese", value: "2 industriali monofase" },
+          { label: "Strumentazione", value: "Indicatore di tensione a LED" },
+          { label: "Configurazione", value: "Su telaio metallico di protezione" }
+        ]
+      },
       {
         title: "Pramac GBW45Y",
         detail: "Gruppo elettrogeno diesel trifase da 45,33 kVA",
@@ -1662,6 +1739,50 @@ export const categories = [
           { label: "Avviamento", value: "Manuale a strappo" },
           { label: "Configurazione", value: "Aperta su telaio zincato" },
           { label: "Strumentazione", value: "Contaore" }
+        ]
+      },
+    ],
+  },
+  {
+    id: "pompe-irroratrici",
+    label: "Pompe Irroratrici",
+    tagline: "Motopompe per i trattamenti di orti, giardini e colture",
+    items: [
+      // Allestimento e prezzo forniti dal venditore; motore e comando identificati dalle foto.
+      // Pompa: catalogo agricoltura Annovi Reverberi 2024, AR 202 / AR 252.
+      // Motore: https://www.rato-europe.com/wp-content/uploads/2017/05/Rato-motori-albero-orizzontale.pdf
+      {
+        title: "Motopompa Annovi Reverberi AR 252",
+        detail: "Pompa irroratrice a benzina • Motore Rato RS100",
+        price: 400,
+        img: null,
+        description:
+          "Motopompa per irrorazione con pompa Annovi Reverberi AR 252 a due membrane semidrauliche BlueFlex e motore a benzina Rato RS100 da 97,7 cm³. La pompa raggiunge una pressione massima di 25 bar e una portata massima di circa 25 litri al minuto, per i trattamenti di orti, giardini e colture. Il gruppo comando GR 30, dotato di manometro, manopola di regolazione e leva di bypass, permette di impostare e controllare la pressione di lavoro. Il motore monocilindrico a quattro tempi OHV sviluppa 1,4 kW a 3.600 giri/min e si avvia manualmente a strappo. Il gruppo compatto è dotato di maniglia per la movimentazione e di base motore con fori di fissaggio.",
+        features: [
+          "Pompa Annovi Reverberi AR 252 a due membrane semidrauliche",
+          "Membrane BlueFlex",
+          "Pressione massima di 25 bar",
+          "Portata massima di circa 25 l/min",
+          "Motore a benzina Rato RS100 a quattro tempi OHV",
+          "Avviamento manuale a strappo",
+          "Gruppo comando GR 30 con manometro e regolazione della pressione",
+          "Leva di bypass per la gestione del ricircolo",
+          "Maniglia di movimentazione e base motore predisposta per il fissaggio",
+        ],
+        specs: [
+          { label: "Pompa", value: "Annovi Reverberi AR 252" },
+          { label: "Tipo pompa", value: "A 2 membrane semidrauliche BlueFlex" },
+          { label: "Pressione massima", value: "25 bar" },
+          { label: "Portata massima", value: "Circa 25 l/min (24,6 l/min da catalogo)" },
+          { label: "Regime massimo pompa", value: "650 giri/min" },
+          { label: "Gruppo comando", value: "GR 30 con manometro e bypass" },
+          { label: "Motore", value: "Rato RS100" },
+          { label: "Alimentazione", value: "Benzina" },
+          { label: "Tipo motore", value: "Monocilindrico, 4 tempi OHV" },
+          { label: "Cilindrata", value: "97,7 cm³" },
+          { label: "Potenza motore", value: "1,4 kW a 3.600 giri/min" },
+          { label: "Avviamento", value: "Manuale a strappo" },
+          { label: "Serbatoio carburante", value: "1,4 litri" }
         ]
       },
     ],
